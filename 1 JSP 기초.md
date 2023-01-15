@@ -65,15 +65,15 @@ include : 외부 파일을 현재 JSP 페이지에 포함시킵니다
 taglib : 표현 언어에서 사용할 자바 클래스나 JSTL을 선언합니다
 
 1. **page 지시어**
-    
+    ```
     <%@ page language=”java” contentType=”text/html; charset=UTF-8” pageEncoding=”UTF-8” %>
     
     <%@ page import=”java.util.Data” %>
-    
+    ```
     Error 처리
     
     1) try-catch사용: 자바에서 사용하듯이 try-catch문을 사용해서 직접적으로 예외처리
-    
+    ```
     <%
     
     try {
@@ -85,9 +85,9 @@ taglib : 표현 언어에서 사용할 자바 클래스나 JSTL을 선언합니�
     }
     
     %>
-    
+    ```
     2) **errorPage, isErrorPage** 속성 사용
-    
+    ```
     <%@ page language=”java” contentType=”text/html; charset=UTF-8” pageEncoding=”UTF-8”
     
     errorPage=”isErrorPage.jsp” %>
@@ -105,7 +105,7 @@ taglib : 표현 언어에서 사용할 자바 클래스나 JSTL을 선언합니�
     오류 메시지 : <%= exception.getMessage() %>
     
     </p>
-    
+    ```
 - 이런 식으로 isErrorPage를 true로 설정해줄 경우 이전에 발생한 error 내용을 가져올 수 있다.
 
 **<%@ page trimDirectiveWhitespaces=”true” %>** : 페이지를 사용하면서 안드로이드와 같은 외부 기기와 연동 시에는 import하는 부분이 실제로 페이지에서는 공백으로 보여서 문제가 될 수 있다. 
