@@ -138,8 +138,8 @@ Application > Session > Request > Page
     
     > Map은 그냥 자료구조 사용법 확인하기.
     
-    ![Untitled](3%20%E1%84%82%E1%85%A2%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%80%E1%85%A2%E1%86%A8%E1%84%8E%E1%85%A6%E1%84%8B%E1%85%B4%20%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A7%E1%86%A8(Scope)%2085b8f283cdd24b56b622bd29b2f411b8/Untitled.png)
-    
+![Untitled](https://user-images.githubusercontent.com/111109411/212546476-57d15ce2-1afd-45a4-85c5-4e93fc86a8a0.png)
+
 
 ---
 
