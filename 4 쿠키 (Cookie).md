@@ -13,7 +13,7 @@
 
 **동작 메커니즘**
 
-![Untitled](4%20%E1%84%8F%E1%85%AE%E1%84%8F%E1%85%B5%20(Cookie)%2041037e297df047abab0ebdb58f769497/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/212597356-ed89f7c9-5481-4059-a486-7f2fc85532cc.png" width=60%>
 
 1. Request: 클라이언트가 서버에 요청을 보낸다.
 2. Response: 서버가 쿠키를 생성하여 HTTP Response Header에 실어 전송한다.
@@ -36,7 +36,7 @@
 **기본 조작법**
 
 - 쿠키 초기 설정
-    
+    ```
     <%
     
     Cookie cookie = new Cookie(“myCookie”, “쿠키 맛있어요”);
@@ -48,17 +48,17 @@
     response.addCookie(cookie);
     
     %>
-    
+    ```
 - 쿠키는 기본적으로 하나의 Class에 해당하고 해당 class로 Object를 만들어 사용하는 것이다. 그리고 cookie에 대한 값을 모두 설정했으면 응답 헤더에 추가해주는 작업을 반드시 해야 한다.
 
 - 쿠키 사용시
-
+```
 <%
 
 Cookie[] cookies = request.getCookies();
 
 %>
-
+```
 ※ 주의 점: 앞서 말했듯이 쿠키를 사용하는 것은 서버와 한번의 통신이 이루어져야 사용이 가능하다. 때문에 client 측에서 만들자마자 바로 사용하는 것은 불가능함. (쿠키는 request에 존재, response는 보내주는 쪽)
 
 **실무 응용 [레이어 팝업창 제어]**
@@ -66,7 +66,7 @@ Cookie[] cookies = request.getCookies();
 - 웹 애플리케이션을 개발할 때 팝업창을 많이 사용하게 된다. 팝업창은 회원가입 시 아이디 중복 체크나 간단한 공지사항을 띄워주는 용도로 자주 사용한다. 이때 우리가 자주 보게 되는 하루동안 열지 않음과 같은 정보도 쿠키로 정보가 저장되는 것
 
 **쿠키 미사용 팝업**
-
+```
 <style>
 
 div#popup {
@@ -118,12 +118,12 @@ $('#popup').hide();
 </form></div>
 
 </div>
-
+```
 - form tag를 사용해서 checkbox의 결과를 바로 적용하도록 만들기.
 - 적용 시 form의 특정 action이 있는 것이 아니라 그냥 form을 hide처리 해주면 된다.
 
 **쿠키 사용 팝업 예시**
-
+```
 <%
 
 String popupMode = "on";
@@ -149,10 +149,11 @@ if (cookieName.equals("PopupClose")) {
   }
 
 %>
-
+```
 - 쿠키를 사용한다면 먼저 request에서 쿠키 값을 불러온 뒤 해당 PopupClose의 쿠키 정보가 존재할 경우 해당 값으로 mode를 설정하면 되고 값이 없다면 사용자에게 입력 받은 checkbox 값을 update시켜주면 된다.
 
-![Untitled](4%20%E1%84%8F%E1%85%AE%E1%84%8F%E1%85%B5%20(Cookie)%2041037e297df047abab0ebdb58f769497/Untitled%201.png)
+<img src="https://user-images.githubusercontent.com/111109411/212597390-6a2cee65-6c4f-49be-b8d7-83f75313be07.png" width=60%>
+
 
 - function부분은 check여부에 따라서 ajax() 함수를 호출하고 요청 성공 시 location을 바꿔주면 된다.
     
@@ -163,7 +164,9 @@ if (cookieName.equals("PopupClose")) {
 
 - JQuery는 HTML에서 각 tag 값에 있는 속성을 사용하기 위해 사용하는 형식
 
-![Untitled](4%20%E1%84%8F%E1%85%AE%E1%84%8F%E1%85%B5%20(Cookie)%2041037e297df047abab0ebdb58f769497/Untitled%202.png)
+
+<img src="https://user-images.githubusercontent.com/111109411/212597398-54462466-62dd-42b7-a27c-1d7e9a87c9d8.png" width=60%>
+
 
 **Ajax**
 
@@ -175,7 +178,9 @@ if (cookieName.equals("PopupClose")) {
 - **datatype**: 서버로부터 받을 response data type
 - **success**: 요청 성공 시 실행할 콜백 함수
 
-![Untitled](4%20%E1%84%8F%E1%85%AE%E1%84%8F%E1%85%B5%20(Cookie)%2041037e297df047abab0ebdb58f769497/Untitled%203.png)
+
+
+<img src="https://user-images.githubusercontent.com/111109411/212597405-ccdd60d9-9d53-4f63-bf87-0f44026143cf.png" width=60%>
 
 - JSP에서는 단순 페이지만 jsp파일로 나타내는 것이 아니라 특정 과정을 수행 할 때도 jsp파일로 따로 빼기 때문에 PopupCookie를 정하는 jsp를 따로 생성 한 다음 ajax 비동기 통신으로 data를 update
 
@@ -187,15 +192,15 @@ if (cookieName.equals("PopupClose")) {
     
 
 **페이지 이동 (Class)**
-
+```
 <%
 
 JSFunction.alertLocation(“메시지“, “이동 페이지 경로”, out);
 
 %>
-
+```
 - 기본적으로 사용하게 될 method의 형태는 다음과 같다. 단순히 tag를 만들어서 사용해도 되지만 편의를 위해서 class를 정의해서 사용
-    
+    ```
     public class JSFunction{
     
        public static void alertLocation(String msg, String url, JspWriter out){
@@ -227,14 +232,14 @@ JSFunction.alertLocation(“메시지“, “이동 페이지 경로”, out);
     }
     
     }
-    
+    ```
 - 기본적으로 alertLocation의 경우에는 location의 위치를 바꾸는 method이고 alertBack의 경우에는 현재 경로에서 뒤로가기를 하는 method이다.
 - meg는 알림을 띄우게 될 message, url은 location의 URL, out의 경우에는 JS 코드를 삽입할 출력 Stream을 말한다. JSP 내장 객체를 클래스에서 사용하기 위해서는 매개변수 사용해야 함.
 
 **쿠키 관리자 (Class)**
 
 - 쿠키를 생성하거나 생성된 쿠키를 관리하는 방법 (기간, 경로, 객체 생성)
-
+```
 public class CookieManager{
 
 public static void makeCookie(HttpServletResponse response, String cName, String cValue, int cTime){
@@ -282,7 +287,7 @@ makeCookie(response, cName, “” 0)
 } // 삭제는 그냥 time을 0으로 만들어주면 알아서 삭제된다.
 
 }
-
+```
 - 기본적으로 CookieManager는 3개의 method를 제공한다.
 1. Create 2. Search 3. Delete
 
@@ -293,13 +298,17 @@ makeCookie(response, cName, “” 0)
     Ex) String loginId = CookieManager.readCookie(request, “loginId”);
     
 - 로그인 기능은 그냥 간단하게 form tag 내부에서 여러 입력 값을 토대로 DB 값과 비교하면 된다.
-
+```
 <form action=”IdSaveProcess.jsp” method=”post”>    </form>
 
 IdSaveProcess.jsp
+```
+
 
 - 로그인을 하면서 입력 받은 ID와 Pwd 확인 후 cookie 저장 (DB X)
 
+
+```
 <%
 
 String user_id = request.getParameter(“user_id”);
@@ -327,5 +336,5 @@ JSFunction.alertLocation(“로그인에 성공했습니다.”, ”IdSaveMain.j
 }
 
 %>
-
+```
 - 위 코드는 하드 코딩 된 ID:must | Pwd: 1234 의 값과 비교하여 로그인을 하고 해당 로그인 정보를 cookie에 저장하는 과정을 나타냈다.
