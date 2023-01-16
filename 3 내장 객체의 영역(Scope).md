@@ -41,7 +41,7 @@ Application > Session > Request > Page
 
 - page영역은 기본적으로 클라이언트의 요청을 처리하는데 관여하는 JSP 페이지마다 하나씩 생성된다. 해당 부분은 코드 제일 상단 부분에 선언되며 가장 기본적으로 JAVA에서 사용하는 모듈을 위한 import문과 HTML의 형식을 지정해주는 영역이라고 생각하면 된다.
 - 선언하는 부분이기 때문에 @를 붙여 사용
-    
+    ```
     <%@ page import=”common.Person”%>
     
     <%@ page language=”java” contentTye=”text/html; charset=UTF8” pageEncoding=”UTF-8”%>
@@ -55,14 +55,18 @@ Application > Session > Request > Page
     pageContext.setAttribute(“pagePerson”, new Person(“한석봉”,99));
     
     %>
+    ```
     
 - 이런 식으로 처음 부분에서 page를 선언하고 pageContext에 여러 속성들을 저장할 수 있다.
 
 - 스크립틀릿에서 page context불러오기
-    
+
+
+    ```
     String pString = pageContext.getAttribute(“pageString”).toString()
     
     pPerson.getName()
+    ```
     
 - Page영역의 경우 include 된 파일의 page 영역 또한 공유가 가능하다. Include는 말 그대로 포함 관계이기 때문에 가능
 
@@ -72,6 +76,7 @@ Application > Session > Request > Page
 
 - 클라이언트가 요청을 할 때마다 새로운 request객체가 사용됨. 같은 요청을 처리하는데 사용되는 모든 JSP페이지는 공유한다.
     
+    ```
     <%
     
     request.setAttribute(“requestString”, “request 영역의 문자열”)
@@ -81,17 +86,20 @@ Application > Session > Request > Page
     request.getParameter(”requestString”)
     
     %>
+    ```
     
 - include와 마찬가지로 forward 된 페이지에서도 request 영역의 객체는 공유된다.
-    
+    ```
     <%
     
     request.getRequestDispatcher(“RequestForward.jsp?paramHan=한글”).forward(request,response)
     
     %>
+    ```
     
     → 위 코드는 아래와 같이 작성도 가능
     
+    ```
     <%
     
     requestDispatcher rd = request.getRequestDispatcher(“RequestForward.jsp?paramHan=한글”);
@@ -99,6 +107,7 @@ Application > Session > Request > Page
     rd.forward(request, response);
     
     %>
+    ```
     
 - forwarding된 페이지에서 객체 사용시에는 그냥 request로 사용하면 된다.
 - redirect로 연 페이지라면 request 공유 X
@@ -108,7 +117,7 @@ Application > Session > Request > Page
 
 - client가 웹 브라우저를 최초로 열고난 후 닫을 때까지 요청되는 모든 페이지는 session객체를 공유할 수 있다.
 - Session: 서버에 접속해 있는 상태 혹은 단위를 말하는 것으로 주로 로그인 상태를 유지하는 처리에 사용된다.
-    
+    ```
     <%
     
     session.setAttribute(“lists”, lists);
@@ -116,12 +125,12 @@ Application > Session > Request > Page
     session.getAttribute(“lists”);
     
     %>
-    
+    ```
 
 **Application 영역**
 
 - 웹 애플리케이션은 단 하나의 application 객체만 생성하고 클라이언트가 요청하는 모든 페이지가 application 객체를 공유하게 된다. 해당 객체는 웹 브라우저를 닫았다가 새롭게 접속해도 삭제되지 않고 서버 자체를 내려야 삭제된다.
-    
+    ```
     <%
     
     Map<String, Person> maps = new HashMap<>();
@@ -135,6 +144,7 @@ Application > Session > Request > Page
     application.getAttribute(“maps”);
     
     %>
+    ```
     
     > Map은 그냥 자료구조 사용법 확인하기.
     
