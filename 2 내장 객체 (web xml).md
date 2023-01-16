@@ -13,11 +13,11 @@
     
 - 내장 객체는 <%스크립틀릿%>와 <%=표현식%>안에서만 사용이 가능하고 <%!선언부%>에서 즉시 사용 불가능
     
-![Untitled](https://user-images.githubusercontent.com/111109411/212545538-dee61f33-1f48-4cf9-a086-c414d267a96f.png)
+    
+<img src="https://user-images.githubusercontent.com/111109411/212545538-dee61f33-1f48-4cf9-a086-c414d267a96f.png" width=60%>    
 
-    ![Untitled 1](https://user-images.githubusercontent.com/111109411/212545551-33c489ff-00a7-4c24-b5b2-606abed5546e.png)
-
-
+    
+<img src="https://user-images.githubusercontent.com/111109411/212545551-33c489ff-00a7-4c24-b5b2-606abed5546e.png" width=60%>    
 
 
 **Request**
@@ -29,8 +29,8 @@
 - POST: message의 내용을 content에 직접 포함시켜서 전달, Data를 외부로 숨기기 가능
 - GET: message의 내용을 URL에 포함시켜 전달함.
 
-![Untitled 2](https://user-images.githubusercontent.com/111109411/212545576-6e10f7b7-c879-46d3-b486-009832f3ea7f.png)
-
+    
+<img src="https://user-images.githubusercontent.com/111109411/212545576-6e10f7b7-c879-46d3-b486-009832f3ea7f.png" width=60%>    
 
 
 GET이든 POST든 .getParameter()를 통해서 보낸 data에 접근이 가능하고 GET의 경우에는 query string이 존재한다
@@ -132,8 +132,8 @@ GET이든 POST든 .getParameter()를 통해서 보낸 data에 접근이 가능�
 
 - web.xml은 이클립스 초기 설치 시에는 존재하지 않을 수도 있다. 때문에 따로 설정을 해주거나 web.xml을 직접 만들어 줘야 함.
 
-![Untitled 3](https://user-images.githubusercontent.com/111109411/212545580-04a93b95-567f-4c83-8b16-384865e44f5f.png)
-
+    
+<img src="https://user-images.githubusercontent.com/111109411/212545580-04a93b95-567f-4c83-8b16-384865e44f5f.png" width=60%>    
         
 [https://gocoder.tistory.com/1256](https://gocoder.tistory.com/1256) 
 
