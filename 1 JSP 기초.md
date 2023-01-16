@@ -10,16 +10,15 @@
     
     Web Container(웹 컨테이너) : 웹 서버가 전송해준 요청을 기초로 동적 웹 페이지 생성
     
-![Untitled](https://user-images.githubusercontent.com/111109411/212545399-11f084ae-4dfe-4655-8fd0-7f7d0eb5bebc.png)
-
+    
+<img src="https://user-images.githubusercontent.com/111109411/212545399-11f084ae-4dfe-4655-8fd0-7f7d0eb5bebc.png" width=60%>    
 
 웹 페이지는 기본적으로 2가지로 분류된다.
 
 1. **정적 웹 페이지** : 웹 서버에 저장되어 있는 파일을 그대로 웹 브라우저에 전송해주는 가장 기본적인 웹 페이지
 2. **동적 웹 페이지** : 그때그때 달라지는 데이터를 표현하기 위해 서버가 클라이언트의 요청을 해석하여 가장 적절한 페이지를 표현
 
-![Untitled 1](https://user-images.githubusercontent.com/111109411/212545437-2fe3248b-ff42-44c7-b735-f6b8f53d2e9b.png)
-
+<img src="https://user-images.githubusercontent.com/111109411/212545437-2fe3248b-ff42-44c7-b735-f6b8f53d2e9b.png" width=60%>    
 
 **Applet VS Servlet**
 
@@ -29,23 +28,21 @@
 
 서블릿이 직접 당당하는 부분은 ‘전처리’ 부분이며 .java를 컴파일한 .class 형태를 사용하고 대표적인 서블릿 컨테이너가 Tomcat이다.
 
-![Untitled 2](https://user-images.githubusercontent.com/111109411/212545455-befb4f64-f812-4b4d-ba7b-51c90f19bd9e.png)
-
+<img src="https://user-images.githubusercontent.com/111109411/212545455-befb4f64-f812-4b4d-ba7b-51c90f19bd9e.png" width=60%>    
 
 **JSP(Java Server Page)**
 
 서블릿을 사용하면서 모든 HTML 코드를 자바를 사용해 생성하다 보니 너무 많은 코드가 필요 했고 이것을 보완하고자 기본을 HTML을 사용하고 필요한 부분만 JAVA를 사용하도록 바꾼 것이 JSP이다.
 
-![Untitled 3](https://user-images.githubusercontent.com/111109411/212545472-fce36d4c-748f-43da-ad76-ddec02eab52d.png)
 
+<img src="https://user-images.githubusercontent.com/111109411/212545472-fce36d4c-748f-43da-ad76-ddec02eab52d.png" width=60%>    
 
 **가장 최근의 웹 사이트**
 
 - 모든 것을 동적으로 웹 페이지를 구성하는 것은 좋은 것이 아니다. 때로는 속도 적인 측면과 효율 측면에서정적인 웹 페이지를 사용해야 할 때도 있다. 그래서 오늘날의 웹 사이트는 동적 웹페이지 + 정적 웹 페이지 두개를 모두 사용하는 형태로 변화되었다.
 
 
-![Untitled 4](https://user-images.githubusercontent.com/111109411/212545481-777b029e-2939-4989-86f9-2bacafb64fcb.png)
-
+<img src="https://user-images.githubusercontent.com/111109411/212545481-777b029e-2939-4989-86f9-2bacafb64fcb.png" width=60%>    
 
 **JSP 사용법**
 
@@ -75,12 +72,14 @@ taglib : 표현 언어에서 사용할 자바 클래스나 JSTL을 선언합니�
     1) try-catch사용: 자바에서 사용하듯이 try-catch문을 사용해서 직접적으로 예외처리
     ```
     <%
-    
+   
     try {
     
+        내용
+        
     }catch (exception e){
     
-    out.println(“예외 발생”);
+        out.println(“예외 발생”);
     
     }
     
