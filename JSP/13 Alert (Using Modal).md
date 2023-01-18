@@ -1,11 +1,16 @@
 # 15. Alert (Using Modal)
 
+<img src="https://img.shields.io/badge/Bootstrap-F43059?style=flat&logo=Bootstrap&logoColor=white"/>
+	
 - 웹 페이지를 사용하면서 alert()와 같이 사용자에게 현재 페이지에 대한 내용을 알려줘야 할 경우들이 생긴다. 하지만 자바스크립트 내에 존재하는 alert의 경우에는 각각의 기기와 웹 브라우져에 따라 어떤 형태로 나타날지를 알지 못한다.
     - 때문에 이러한 alert()를 효과적으로 나타내기 위한 방법 중 하나는 modal을 사용해서 사용자에게 내용을 전달해주는 것이다.
 
+
 ### **Modal**
 
-![Untitled](15%20Alert%20(Using%20Modal)%20d96df4f5300e4ded9856c51a4a34dbc4/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/213123064-a646b40b-a2ac-487b-b37e-e1f07281c604.png" width=60%>
+
+
 
 - Modal은 사용자의 이목을 끌기 위해 사용하는 화면 전환 기법을 의미한다. 쉽게 생각하면 우리가 웹 페이지를 사용하면서 현재 창 위에 작은 창 하나가 뜨고 주변이 불투명한 검정 영역으로 변하는 것을 본 적 있을텐데 그러한 영역을 말한다.
 - modal을 사용할 때 직접 만들어서 사용해도 되지만 가장 흔히 사용되는 bootstrap을 이용해 alert기능을 구현해 보았다.
@@ -28,7 +33,8 @@
 String content = URLDecoder.decode(request.getParameter("content"), "UTF-8");
 ```
 
-![Untitled](15%20Alert%20(Using%20Modal)%20d96df4f5300e4ded9856c51a4a34dbc4/Untitled%201.png)
+<img src="https://user-images.githubusercontent.com/111109411/213123117-fd0a61ac-2eec-4004-a039-ac3719021ebe.png" width=60%>
+
 
 - 아래의 예시는 기본적으로 session 정보가 존재할 경우에 특정 페이지로 이동 시키는 예제이다. 사용할 때는 아래와 같이 <jsp: include> action tag로 페이지를 불러와 스크립 틀릿의 조건 안에서 사용하면 된다.
 - param으로 넘겨줘야 할 값은 title(제목), content(내용), url(취소를 누르고 이동할 페이지)
@@ -100,3 +106,4 @@ document.getElementById("sessionModal").click();
 ```
 
 [https://getbootstrap.com/docs/4.3/components/modal/](https://getbootstrap.com/docs/4.3/components/modal/)
+
