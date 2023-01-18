@@ -45,11 +45,11 @@ String content = URLDecoder.decode(request.getParameter("content"), "UTF-8");
 if(session.getAttribute("userID") != null){
 		userID = (String) session.getAttribute("userID");
 %>
-		<jsp:include page='alert.jsp'> 
-				<jsp:param name="title" value="<%=URLEncoder.encode(\"안내\", \"UTF-8\") %>" />
-				<jsp:param name="content" value="<%=URLEncoder.encode(\"로그인 정보가 존재합니다.\", \"UTF-8\") %>" />
-				<jsp:param name="url" value="location.href = 'index.jsp';"/>
-		</jsp:include>	
+	<jsp:include page='alert.jsp'> 
+		<jsp:param name="title" value="<%=URLEncoder.encode(\"안내\", \"UTF-8\") %>" />
+		<jsp:param name="content" value="<%=URLEncoder.encode(\"로그인 정보가 존재합니다.\", \"UTF-8\") %>" />
+		<jsp:param name="url" value="location.href = 'index.jsp';"/>
+	</jsp:include>	
 <%
 }
 %>
@@ -58,43 +58,43 @@ if(session.getAttribute("userID") != null){
 alert.jsp
 
 ```
-	<%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <%@ page import='java.net.URLDecoder' %>
 <%
-request.setCharacterEncoding("UTF-8");
-String title =URLDecoder.decode(request.getParameter("title"), "UTF-8");
-String content = URLDecoder.decode(request.getParameter("content"), "UTF-8");
-String url = URLDecoder.decode(request.getParameter("url"), "UTF-8");
+	request.setCharacterEncoding("UTF-8");
+	String title =URLDecoder.decode(request.getParameter("title"), "UTF-8");
+	String content = URLDecoder.decode(request.getParameter("content"), "UTF-8");
+	String url = URLDecoder.decode(request.getParameter("url"), "UTF-8");
 %>
+
 <a id="sessionModal" data-toggle="modal" href="#loginModal" style="display:none;"></a>
 
 <script>
-window.onload=function(){
-document.getElementById("sessionModal").click();	
-}
+	window.onload=function(){
+		document.getElementById("sessionModal").click();	
+	}
 </script>
 
 <div class="modal fade" id="loginModal" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="modal" aria-hidden="true">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id ="modal">
-<%=title %>
-</h5>
-<button type="button" class="close" data-dismiss="modal" onClick="<%=url%>" aria-label="Close" >
-<span aria-hidden="true">×</span>
-</button>	
-</div>	
-	<div class="modal-body">
-			<div class="form-row">
-				<div class="form-group col-sm-12">
-					<label><%=content %></label>
-				</div>
-				<div class="modal-footer col-sm-12">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id ="modal">
+				<%=title %>
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" onClick="<%=url%>" aria-label="Close" >
+					<span aria-hidden="true">×</span>
+				</button>	
+			</div>	
+			<div class="modal-body">
+				<div class="form-row">
 					<div class="form-group col-sm-12">
-						<button type="button" id="close_modal" class="btn btn-secondary" style="width:100%;" data-dismiss="modal" onClick="<%=url%>">close</button>
+						<label><%=content %></label>
+					</div>
+					<div class="modal-footer col-sm-12">
+						<div class="form-group col-sm-12">
+							<button type="button" id="close_modal" class="btn btn-secondary" style="width:100%;" data-dismiss="modal" onClick="<%=url%>">close</button>
 					</div>
 				</div>
 			</div>
