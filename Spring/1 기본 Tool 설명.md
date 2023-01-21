@@ -8,7 +8,9 @@
     
 - 위 사이트 접속해서 다운로드를 하는데 학생이라면 학생 계정으로 로그인 할 시 구매 없이 사용 가능
 
-![Untitled](1%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20Tool%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%86%E1%85%A7%E1%86%BC%20d257ff3fb1434e84ae25d01b76f538ee/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/213862163-bbb93a81-9619-4468-9ce3-824f4fa72092.png" width=60%>
+
+
 
 - 특별한 설치 옵션은 없고 위와 같은 옵션만 체크해주면 된다.
 
@@ -17,24 +19,28 @@
 [https://goddaehee.tistory.com/195](https://goddaehee.tistory.com/195)
 
 ## **프로젝트 구조**
+<img src="https://user-images.githubusercontent.com/111109411/213862167-ba7f9900-82a3-4cb1-90bb-398899bd6e58.png" width=60%>
 
-![Untitled](1%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20Tool%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%86%E1%85%A7%E1%86%BC%20d257ff3fb1434e84ae25d01b76f538ee/Untitled%201.png)
 
 - **Java:** 자바 내부에 있는 파일들을 기본적인 소스코드 파일들을 포함하고 있는 폴더임.
 
-![Untitled](1%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20Tool%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%86%E1%85%A7%E1%86%BC%20d257ff3fb1434e84ae25d01b76f538ee/Untitled%202.png)
+<img src="https://user-images.githubusercontent.com/111109411/213862173-6187fec6-c6fd-4894-a2ce-a4f87a57d7e3.png" width=60%>
+
+
 
 - **Resources:** static이나 templates의 경우 프론트엔드 부분의 요소들을 담고 있고application.properties는 JSP에서 application 영역과 동일하게 DB 연결과 같은 부분에서 커넥트 풀을 생성해주는 파일이다.
 
-![Untitled](1%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20Tool%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%86%E1%85%A7%E1%86%BC%20d257ff3fb1434e84ae25d01b76f538ee/Untitled%203.png)
+<img src="https://user-images.githubusercontent.com/111109411/213862180-b7de23cf-0313-44f0-ba04-08f6b947f143.png" width=60%>
+
 
 - **Test:** Class를 테스트하는 방식으로 실제 적용 전 로직 테스트 할 때 사용된다.
+<img src="https://user-images.githubusercontent.com/111109411/213862190-decaa0de-27f1-4369-9572-22401b8993ec.png" width=60%>
 
-![Untitled](1%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20Tool%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%86%E1%85%A7%E1%86%BC%20d257ff3fb1434e84ae25d01b76f538ee/Untitled%204.png)
+<img src="https://user-images.githubusercontent.com/111109411/213862200-9c8e6815-2591-4324-bb6f-a6401105d733.png" width=60%>
 
-![Untitled](1%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20Tool%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%86%E1%85%A7%E1%86%BC%20d257ff3fb1434e84ae25d01b76f538ee/Untitled%205.png)
+<img src="https://user-images.githubusercontent.com/111109411/213862205-969bcc56-9273-4cf5-bb93-80d399353be0.png" width=60%>
 
-![Untitled](1%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20Tool%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%86%E1%85%A7%E1%86%BC%20d257ff3fb1434e84ae25d01b76f538ee/Untitled%206.png)
+
 
 - 우리가 선택한 maven에서 사용되는 파일로 각각의 태그 이해하면 좋다
     
@@ -67,8 +73,10 @@
 
 – 자바의 대표적인 관리 도구였던 Ant를 대체하기 위해 개발되었으며 프로젝트의 외부 라이브러리를 쉽게 참조하기 위해 pom.xml파일로 명시하여 관리한다.
 
-![Untitled](1%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20Tool%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%86%E1%85%A7%E1%86%BC%20d257ff3fb1434e84ae25d01b76f538ee/Untitled%207.png)
+<img src="https://user-images.githubusercontent.com/111109411/213862211-3c3f6684-a695-451b-a847-8c896babab1b.png" width=60%>        
+        
 
+        
 **왜 Maven을 사용?**
 
 1. 기존에 사용하던 Ant는 빌드의 기능만을 가지고 있음
@@ -138,8 +146,10 @@ mavenCentral: 기본 Maven Repository
 
 dependencies: 라이브러리 사용을 위한 의존성 설정
 
-![Untitled](1%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20Tool%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%86%E1%85%A7%E1%86%BC%20d257ff3fb1434e84ae25d01b76f538ee/Untitled%208.png)
+<img src="https://user-images.githubusercontent.com/111109411/213862219-3b418137-6191-446a-ad15-8f27fc2ebf27.png" width=60%>
 
+ 
+        
 **대표적인 Maven Repository Site**
 
 [https://mvnrepository.com/](https://mvnrepository.com/)
