@@ -92,8 +92,9 @@
 - <description>: 프로젝트에 대한 간단한 설명
 - <organization>: 프로젝트를 관리하는 단체 설명
 
-![Untitled](3%20Rest%20API%E1%84%8B%E1%85%AA%20pom%20xml%2020d5c8d7a0f74c1086f794b997b8aed5/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/213862338-ad905618-76a1-4559-8771-e7190f573f74.png" width=60%>
 
+    
 ### **프로젝트 연관 정보**
 
 - <groupId>: 프로젝트의 그룹 ID 설정
@@ -103,8 +104,12 @@
     - jar: 자바 프로젝트 압축 파일
     - war: 웹 어플리케이션을 위한 패키징 방식
 
-![Untitled](3%20Rest%20API%E1%84%8B%E1%85%AA%20pom%20xml%2020d5c8d7a0f74c1086f794b997b8aed5/Untitled%201.png)
 
+<img src="https://user-images.githubusercontent.com/111109411/213862347-6d6b619b-0e76-4ca6-8c03-8032f47f1f60.png" width=60%>
+
+
+    
+    
 ### **프로젝트 의존 설정**
 
 - <dependencies>: 라이브러리 의존성 정보를 가지고 있는 dependency 태그를 묶은 태그
@@ -115,8 +120,10 @@
 - <scope>: 해당 라이브러리의 이용 범위를 지정
 - <optional>: 다른 프로젝트에서 이 프로젝트를 의존성 설정을 할 경우 사용할지 결정
 
-![Untitled](3%20Rest%20API%E1%84%8B%E1%85%AA%20pom%20xml%2020d5c8d7a0f74c1086f794b997b8aed5/Untitled%202.png)
+   
+<img src="https://user-images.githubusercontent.com/111109411/213862354-88659b06-4ee1-419a-9c11-b000f2b387a0.png" width=60%>
 
+    
 ### **Scope 태그**
 
 - **compile (default)**
