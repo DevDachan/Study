@@ -33,7 +33,7 @@
 
 public String getHello (@PathVariable String variable){
 
-return variable;
+  return variable;
 
 }
 
@@ -47,7 +47,7 @@ return variable;
 
 public String getHello2 (@PathVariable(variable2) String var){
 
-return var;
+  return var;
 
 }
 
@@ -66,15 +66,15 @@ Ex) [http://localhost:8080/api/hello?name=dachan&email=devdachan&organization=de
 
 public String getRequestParam(
 
-@RequestParam String name,
+  @RequestParam String name,
 
-@RequestParam String email,
+  @RequestParam String email,
 
-@RequestParam String organization
+  @RequestParam String organization
 
-){
+  ){
 
-return name + “ ” + email + “ ” + organization;
+    return name + “ ” + email + “ ” + organization;
 
 }
 
@@ -88,15 +88,15 @@ return name + “ ” + email + “ ” + organization;
 
 public String getRequestParam(@RequestParam MAP<String, String> param){
 
-StringBuilder sb = new StringBuilder();
+  StringBuilder sb = new StringBuilder();
 
-param.entrySet().forEach(map -> {
+  param.entrySet().forEach(map -> {
 
-sb.append(map.getKey() +” : ”+ map.getValue() + “\n”);
+    sb.append(map.getKey() +” : ”+ map.getValue() + “\n”);
 
-});
+  });
 
-return sb.toString();
+  return sb.toString();
 
 }
 
@@ -113,19 +113,19 @@ return sb.toString();
 
 public String getRequestParam(MemberDTO memberDTO){
 
-return memberDTO.toString();
+  return memberDTO.toString();
 
 }
 
 public class MemberDTO{
 
-private String name;
+  private String name;
 
-private String email;
+  private String email;
+  
+  private String organization;
 
-private String organization;
-
-…
+  …
 
 }
 
@@ -145,17 +145,19 @@ public class GetController {
 
 // http://localhost:8080/api/v1/get-api/hello
 
-@RequestMapping(value = "/hello", method = RequestMethod.GET)
+  @RequestMapping(value = "/hello", method = RequestMethod.GET)
 
-public String getHello(){
+  public String getHello(){
 
-return "Hello World";
+    return "Hello World";
 
-}
+  }
 
 ```
 
-![Untitled](6%20GET,%20POST%20API%2039f1a8f1843f47cfa7721543bbb7e7d1/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/213903752-fba80253-48e4-454d-a88d-046175539ef6.png" width=60%>
+
+
 
 ```
 
@@ -163,13 +165,14 @@ return "Hello World";
 
 public String getVariable(@PathVariable("variable") String var){
 
-return var;
+  return var;
 
 }
 
 ```
 
-![Untitled](6%20GET,%20POST%20API%2039f1a8f1843f47cfa7721543bbb7e7d1/Untitled%201.png)
+<img src="https://user-images.githubusercontent.com/111109411/213903762-dd10dc3d-f16a-4f37-a864-61db3fc6b129.png" width=60%>
+
 
 ```
 
@@ -177,13 +180,14 @@ return var;
 
 public String getRequestParam3(MemberDTO memberDTO){
 
-return memberDTO.toString();
+  return memberDTO.toString();
 
 }
 
 ```
 
-![Untitled](6%20GET,%20POST%20API%2039f1a8f1843f47cfa7721543bbb7e7d1/Untitled%202.png)
+<img src="https://user-images.githubusercontent.com/111109411/213903777-6723fad7-f560-428d-ba83-2ddf6cf5be89.png" width=60%>
+
 
 ```
 
@@ -191,15 +195,15 @@ return memberDTO.toString();
 
 public String getRequestParam2(@RequestParam Map<String, String> param){
 
-StringBuilder sb = new StringBuilder();
+  StringBuilder sb = new StringBuilder();
 
-param.entrySet().forEach(map -> {
+  param.entrySet().forEach(map -> {
 
-sb.append(map.getKey() +" : "+ map.getValue() + "\n");
+    sb.append(map.getKey() +" : "+ map.getValue() + "\n");
 
-});
+  });
 
-return sb.toString();
+  return sb.toString();
 
 }
 
@@ -222,15 +226,15 @@ Ex)
 
 public String postMember(@RequestBody Map<String, Object> postData){
 
-StringBulder sb = new StringBuilder();
+  StringBulder sb = new StringBuilder();
 
-postData.entrySet().forEach( map-> {
+  postData.entrySet().forEach( map-> {
 
-sb.append(map.getKey()+ “: ” + map.getValue() + “\n”);
+    sb.append(map.getKey()+ “: ” + map.getValue() + “\n”);
 
-});
+  });
 
-return sb.toString();
+  return sb.toString();
 
 }
 
@@ -242,7 +246,7 @@ return sb.toString();
 
 public String postMemberDto(@RequestBody MemberDTO memberDTO){
 
-return memberDTO.toString();
+  return memberDTO.toString();
 
 }
 
@@ -256,20 +260,20 @@ return memberDTO.toString();
 
 public String postMember(@RequestBody Map<String, Object> postData){
 
-StringBuilder sb = new StringBuilder();
+  StringBuilder sb = new StringBuilder();
 
-postData.entrySet().forEach( map -> {
+  postData.entrySet().forEach( map -> {
 
-sb.append(map.getKey() + " : " + map.getValue() + "\n");
+    sb.append(map.getKey() + " : " + map.getValue() + "\n");
 
-});
+  });
 
-return sb.toString();
+  return sb.toString();
 
 }
 
 ```
 
-![Untitled](6%20GET,%20POST%20API%2039f1a8f1843f47cfa7721543bbb7e7d1/Untitled%203.png)
+<img src="https://user-images.githubusercontent.com/111109411/213903785-0ea03cfc-12d0-427b-b691-10335443ea70.png" width=60%>
 
 - POST로 보낼 경우에는 보이는 것처럼 BODY에 JSON형태로 추가해야 함
