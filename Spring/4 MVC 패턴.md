@@ -4,8 +4,7 @@
 
 - 디자인 패턴 중 하나인 MVC 패턴은 모델, 뷰, 컨트롤러의 줄임 말로 애플리케이션을 세가지 역할로 구분한 패턴을 의미한다.
 - 사용자 인터페이스로부터 비즈니스 로직을 분리하여 서로 영향 없이 쉽게 고칠 수 있는 설계가 가능
-
-![Untitled](4%20MVC%20%E1%84%91%E1%85%A2%E1%84%90%E1%85%A5%E1%86%AB%203c78940ffd044b618460a4277507ecc5/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/213903593-4c31dec8-4e14-49a0-ac48-437be74a90b7.png" width=60%>
 
 **컨트롤러 (Controller)**
 
