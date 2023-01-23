@@ -1,8 +1,11 @@
 # 7. Swagger (협업 라이브러리) X
 
+* 현재 이전버전 Swagger 오류로 인해 해당 dependency방법으로 실행이 안됨. 추후 오류 
+
 ### **협업을 위해 필요한 라이브러리**
 
-![Untitled](7%20Swagger%20(%E1%84%92%E1%85%A7%E1%86%B8%E1%84%8B%E1%85%A5%E1%86%B8%20%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B3%E1%84%85%E1%85%A5%E1%84%85%E1%85%B5)%20X%20860e6d81746044e798ae69cea411b060/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/214030635-b88a661e-aa6a-4ce1-ba9f-93b70edc8e25.png" width=60%>
+
 
 - 이전에는 API를 소개할 때 Spec을 담고 있는 Document(Excel,word 등)를 전해주게 된다. 그런데 그때그때 해당 Document를 수정해서 보내주는 것에 문제가 될 수 있음
 
@@ -39,11 +42,13 @@ pom.xml
 
 - 위 dependency설정 이후 아래와 같은 maven update버튼을 눌러주면 자동으로 라이브러리가 설치되어 추가 된다.
 
-![Untitled](7%20Swagger%20(%E1%84%92%E1%85%A7%E1%86%B8%E1%84%8B%E1%85%A5%E1%86%B8%20%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B3%E1%84%85%E1%85%A5%E1%84%85%E1%85%B5)%20X%20860e6d81746044e798ae69cea411b060/Untitled%201.png)
+<img src="https://user-images.githubusercontent.com/111109411/214030669-e616caa3-2c1b-4832-8492-6bc61887af03.png" width=40%>
+
 
 ### Swagger Package
 
-![Untitled](7%20Swagger%20(%E1%84%92%E1%85%A7%E1%86%B8%E1%84%8B%E1%85%A5%E1%86%B8%20%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B3%E1%84%85%E1%85%A5%E1%84%85%E1%85%B5)%20X%20860e6d81746044e798ae69cea411b060/Untitled%202.png)
+<img src="https://user-images.githubusercontent.com/111109411/214030740-28ffb2b0-23fb-4074-90f6-97a24db1a413.png" width=40%>
+
 
 - dependency추가 이후 해당 프로젝트의 [main.jav](http://main.java)a.project 내부에 config라는 패키지를 추가시켜 주고 원하는 Class를 생성해주면 된다.
 
