@@ -2,7 +2,7 @@
 
 ### Spring Boot 서비스 구조
 
-![Untitled](10%20DB%20(Entity,%20DAO,%20Repository,%20DTO)%209ec24b4a09974c43816f156c50bdf5c5/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/214298093-7acb2ac7-e7a9-4a20-b6d3-8e2ea30afbc4.png" width=60%>
 
 ### Entity (Domain)
 
@@ -25,9 +25,18 @@
 
 ### DTO (Data Transfer Object)
 
-- DTO는 VO(Value Object)로 불리기도 하며, 계층 간 데이터 교환을 위한 객체를 의미
-- VO의 경우 REad Only의 개념을 가지고 있음
-- DTO는 Entity와는 다르게 반드시 DB 테이블의 컬럼과 같을 필요가 없다.
+- DTO는 VO(Value Object)로 불리기도 하며, 계층 간 데이터 교환을 위한 객체를 의미   
+- VO의 경우 REad Only의 개념을 가지고 있음   
+- 일반적으로 단순히 데이터의 Getter, Setter만을 포함하고 있으며 순수한 데이터 객체이다.   
+- DTO는 Entity와는 다르게 반드시 DB 테이블의 컬럼과 같을 필요가 없다.   
+
+</br>   
+
+-------------------------------------   
+
+- DTO와 Entity는 기능이 비슷하지만 조금 다르게 생긴 애들이라고 생각하자 (DB Table과 data가 동일한지 아닌지)    
+- DAO와 Repository는 크게 차이점이 없다 단순히 DAL을 구현하는 방식의 차이이다. Domain 중심으로 설계가 되는지 DB Table 중심으로 설계가 되는지.   
+--------------------------------------
 
 ## **Code**
 
