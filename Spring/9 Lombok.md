@@ -27,8 +27,9 @@
 - 해당 클래스에 선언되어 있는 필드를 기반으로 getField, setField와 같은 식으로 자동으로 method 생성
 - 자동으로 getter와 setter를 생성해주기 때문에 별도로 만들어줄 필요가 없다.
     
-    ![Untitled](9%20Lombok%2095bfafbed97a40a2904c54b2c7ae24db/Untitled.png)
-    
+<img src="https://user-images.githubusercontent.com/111109411/214297696-76de6337-3d14-4b10-8844-21442c243871.png" width=20%>    
+
+
 
 ### @NoArgsConstructor // @AllArgsConstructor // @RequiredArgsConstructor
 
@@ -36,15 +37,18 @@
 - All : 모든 필드 값을 파라미터로 갖는 생성자를 생성
 - Required : 필드 값 중 final이나 @NotNull인 값을 갖는 생성자를 생성
     
-    ![Untitled](9%20Lombok%2095bfafbed97a40a2904c54b2c7ae24db/Untitled%201.png)
-    
+
+<img src="https://user-images.githubusercontent.com/111109411/214297734-f7e49730-6059-4bbb-b8da-a0dbc6938aa9.png" width=20%>    
+
 
 ### @ToString
 
 - toString 메소드를 자동으로 생성
 - @ToString 어노테이션에 exclude속성을 사용하여 특정 필드를 toString에서 제외 시킬 수 있음
 
-![Untitled](9%20Lombok%2095bfafbed97a40a2904c54b2c7ae24db/Untitled%202.png)
+<img src="https://user-images.githubusercontent.com/111109411/214297766-667cd62d-b5ca-49e1-b41c-a70e8d0ffdbf.png" width=100%>    
+
+
 
 ### @EqualsAndHashCode
 
@@ -63,7 +67,8 @@
 
 ## Code
 
-![Untitled](9%20Lombok%2095bfafbed97a40a2904c54b2c7ae24db/Untitled%203.png)
+<img src="https://user-images.githubusercontent.com/111109411/214297810-3a1040a4-4855-4b8a-b1a7-24f0512afa4b.png" width=60%>    
+
 
 - Getter 어노테이션 추가한 이후 우클릭해서 Refactor에 들어가면 Delombok을 통해 해당 어노테이션이 어떻게 구성하고 있는지 확인이 가능하다.
 
