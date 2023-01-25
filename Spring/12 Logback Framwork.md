@@ -19,7 +19,10 @@
 
 ## Logback 구조
 
-![Untitled](12%20Logback%20Framwork%2007475e35026d4a819d9ef4a679b5c8d7/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/214507438-3f82dceb-a9ad-47b6-b163-fafad9684a24.png" width=60%>
+
+
+
 
 ## Logback 설정
 
@@ -29,7 +32,8 @@
 
 ## Logback 설정 파일 형식
 
-![Untitled](12%20Logback%20Framwork%2007475e35026d4a819d9ef4a679b5c8d7/Untitled%201.png)
+<img src="https://user-images.githubusercontent.com/111109411/214507471-e735d322-b241-45b5-b31c-56a26b71bbc0.png" width=80%>
+
 
 ## Appender
 
@@ -40,7 +44,9 @@
     - SMTPAppender: 로그를 메일로 보냄
     - DBAppender: DB에 로그를 저장
 
-![Untitled](12%20Logback%20Framwork%2007475e35026d4a819d9ef4a679b5c8d7/Untitled%202.png)
+<img src="https://user-images.githubusercontent.com/111109411/214507499-d9af6954-7fc2-4c2c-9646-69eb4bd6680e.png" width=80%>
+
+
 
 - RollingFileAppender의 예시로써 filter는 임계치를 설정, file은 저장되는 파일의 이름, append는 내용을 뒤에 붙인다는 의미, rollingPolicy는 여러 개 파일을 순회하게 될 때 몇몇 정책을 지정하는 것이다.
 
@@ -48,14 +54,19 @@
 
 - Appender 내에 포함되는 항복이며 pattern을 사용하여 원하는 형식으로 로그를 표현할 수 있음
 
-![Untitled](12%20Logback%20Framwork%2007475e35026d4a819d9ef4a679b5c8d7/Untitled%203.png)
+<img src="https://user-images.githubusercontent.com/111109411/214507535-089d6f2a-796e-443b-8172-01a3be182d5e.png" width=80%>
+
+
 
 ## Root
 
 - 설정한 Appender를 참조하여 로그의 레벨을 설정할 수 있음
     - root는 전역 설정이며, 지역 설정을 하기 위해서는 logger를 사용
 
-![Untitled](12%20Logback%20Framwork%2007475e35026d4a819d9ef4a679b5c8d7/Untitled%204.png)
+<img src="https://user-images.githubusercontent.com/111109411/214507587-a741f690-1209-46f6-860d-145eac0c5835.png" width=40%>
+
+
+
 
 ## Log Level
 
@@ -73,7 +84,10 @@
 
 ## Pattern
 
-![Untitled](12%20Logback%20Framwork%2007475e35026d4a819d9ef4a679b5c8d7/Untitled%205.png)
+<img src="https://user-images.githubusercontent.com/111109411/214507612-cbb36b9e-b9a0-4845-b5ff-c019f2dfa4cf.png" width=100%>
+
+
+
 
 ```jsx
 <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-5level][%thread] %logger %msg%n </pattern>
@@ -150,7 +164,10 @@ public class HelloController {
 - 현재 root의 Level이 Info로 설정되어 있기 때문에 출력 되는 내용을 봤을 때 info Log의 하위 log들만 출력이 되는 것을 볼 수 있다.
 - 사실 logback의 기능이 단순히 console.log와 동일하다고 생각할 수 있다.
 
-![Untitled](12%20Logback%20Framwork%2007475e35026d4a819d9ef4a679b5c8d7/Untitled%206.png)
+<img src="https://user-images.githubusercontent.com/111109411/214507658-00556b61-f5eb-4bfa-a068-8899fd7341bd.png" width=100%>
+
+
+
 
 ### ProductDTO 설정 변경 이후 출력해보기
 
@@ -168,4 +185,7 @@ public class HelloController {
     }
 ```
 
-![Untitled](12%20Logback%20Framwork%2007475e35026d4a819d9ef4a679b5c8d7/Untitled%207.png)
+<img src="https://user-images.githubusercontent.com/111109411/214507691-506b80a2-a44b-4fbc-8175-58a063a76798.png" width=100%>
+
+
+
