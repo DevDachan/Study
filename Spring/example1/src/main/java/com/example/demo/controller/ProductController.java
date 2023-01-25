@@ -5,10 +5,13 @@ import com.example.demo.data.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 @RestController
 @RequestMapping("/devdachan/product-api")
 public class ProductController {
     private ProductService productService;
+    private final Logger LOGGER = LoggerFactory.getLogger(HelloController.class);
 
     @Autowired
     public ProductController(ProductService productService) {
@@ -17,7 +20,14 @@ public class ProductController {
 
     @GetMapping(value = "/{productId}")
     public ProductDTO getProduct(@PathVariable String productId) {
-        return productService.getProduct(productId);
+        long startTime = System.currentTimeMillis();
+        LOGGER.info("[ProductController] perform {} of DEMO API","getProduct");
+
+        ProductDTO productDTO = productService.getProduct(productId);
+        LOGGER.info("[ProductController] Response :: productId = {}, productName ={} , productPrice = {} , productStock = {}",
+                productDTO.getProductId(),productDTO.getProductName(),productDTO.getProductPrice(),productDTO.getProductStock());
+
+        return productDTO;
     }
 
     @PostMapping
