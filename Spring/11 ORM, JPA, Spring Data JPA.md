@@ -7,7 +7,10 @@
 - 객체지향 프로그래밍과 관계형 DB의 차이로 발생하는 제약사항을 해결해주는 역할을 수행
 - 대표적으로 JPA, Hibernate등이 있음 (Persistent API)
 
-![Untitled](11%20ORM,%20JPA,%20Spring%20Data%20JPA%207ac48a456e5e480798c20fe421d44295/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/214496005-6811a8fc-0b6a-4d6d-9c44-2e11e6429687.png" width=60%>
+
+
+
 
 ### ORM의 장점
 
@@ -38,7 +41,9 @@
 - ORM Framework 중 하나
 - JPA의 실제 구현체 중 하나이며 현재 JPA 구현체 중 가장 많이 사용됨
 
-![Untitled](11%20ORM,%20JPA,%20Spring%20Data%20JPA%207ac48a456e5e480798c20fe421d44295/Untitled%201.png)
+<img src="https://user-images.githubusercontent.com/111109411/214496027-09729e92-6362-4057-9478-7979db37c8c6.png" width=60%>
+
+
 
 ### Spring Data JPA
 
@@ -48,7 +53,10 @@
     - 데이터 접근 계층 개발시 인터페이스만 작성해도 됨
 - Hibernate에서 자주 사용되는 기능을 조금 더 쉽게 사용할 수 있게 구현
 
-![Untitled](11%20ORM,%20JPA,%20Spring%20Data%20JPA%207ac48a456e5e480798c20fe421d44295/Untitled%202.png)
+<img src="https://user-images.githubusercontent.com/111109411/214496071-16a722b7-335a-40a7-8443-a29dffe14d95.png" width=60%>
+
+
+
 
 ## Code
 
@@ -63,6 +71,7 @@ spring.jpa.show-sql=true
 - ddl-auto: 애플리케이션을 실행할 때 DB를 자동으로 생성. (만약 존재할 경우 drop후 생성)
 - show-sql:  요청을 받았을 때 repository가 동작하는데 그때 관련된 SQL을 표시할 것 인지를 말함. (test할 때만 true로 하고 실무에서는 false)
 
+--------------
 ### Controller
 
 - Controller는 client와 직접적으로 소통하는 부분으로 client에게 받은 data를 DTO 형태로 Service측에 넘기는 역할을 한다.
@@ -109,7 +118,8 @@ public class ProductController {
 }
 ```
 
-## Service
+--------------
+### Service
 
 - Controller에게 DTO 형식으로 받은 데이터를 이용해 비즈니스 로직을 처리하고 DAO에게 Entity를 보내는 역할을 한다.
 - 이때 DAO에게 Entity를 보내는 과정에서 DataHandler를 사용하게 된다.
@@ -173,7 +183,8 @@ public class ProductServiceImpl implements ProductService {
 }
 ```
 
-### H**andler**
+--------------
+### Handler
 
 - Handler는 DAO와 Service를 연결해주는 역할을 하고 입력 받은 data를 entity형식으로 만들어서 DAO에게 전달해준다.
 
@@ -227,6 +238,7 @@ public class ProductDataHandlerImpl implements ProductDataHandler {
 }
 ```
 
+--------------
 (이전 내용)
 
 ### DAO
@@ -279,6 +291,7 @@ public class ProductDAOImpl  implements ProductDAO {
 }
 ```
 
+--------------
 ### Repository
 
 ```jsx
