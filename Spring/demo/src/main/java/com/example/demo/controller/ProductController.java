@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import com.example.demo.common.Constants;
+import com.example.demo.common.exception.DemoException;
 import com.example.demo.data.dto.ProductDTO;
 import com.example.demo.data.entity.ProductEntity;
 import com.example.demo.data.service.ProductService;
@@ -22,7 +24,7 @@ public class ProductController {
         this.productService = productService;
     }
 
-    @GetMapping(value = "/{productId}")
+    @GetMapping(value = "/product/{productId}")
     public ProductDTO getProduct(@PathVariable String productId) {
         long startTime = System.currentTimeMillis();
         LOGGER.info("[ProductController] perform {} of DEMO API","getProduct");
@@ -54,9 +56,13 @@ public class ProductController {
         return ResponseEntity.status(HttpStatus.ACCEPTED).body(response);
     }
 
-    @DeleteMapping(value = "/product.{productId}")
-    public ProductDTO deleteProduct(@PathVariable String productId)
-    {
+    @DeleteMapping(value = "/product/{productId}")
+    public ProductDTO deleteProduct(@PathVariable String productId) {
         return null;
+    }
+
+    @PostMapping(value = "/product/exception")
+    public void exceptionTest() throws DemoException {
+        throw new DemoException(Constants.ExceptionClass.PRODUCT, HttpStatus.FORBIDDEN, "접근이 금지되었습니다.");
     }
 }
