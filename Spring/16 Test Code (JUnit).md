@@ -42,13 +42,16 @@
 - **JUnit Vintage**
     - TestEngine API 구현체로 JUnit 3,4를 구현하고 있음
     - 기존 JUnit 3,4버전으로 작성된 테스트코드를 실행할 때 사용된다.
-    
-    ![Untitled](16%20Test%20Code%20(JUnit)%208435d3f11cfa4086adf23ae1d84dc274/Untitled.png)
-    
+
+
+<img src="https://user-images.githubusercontent.com/111109411/215076619-4794cf95-c5fa-453a-88d2-a994f74e7ab2.png" width=40%>
+
 
 ## JUnit LifeCycle Annotation
 
-![Untitled](16%20Test%20Code%20(JUnit)%208435d3f11cfa4086adf23ae1d84dc274/Untitled%201.png)
+<img src="https://user-images.githubusercontent.com/111109411/215076300-928e6d36-4a22-438f-b817-9fecb6510256.png" width=80%>
+
+
 
 ## JUnit Main Annotation
 
@@ -164,7 +167,8 @@ public class TestLifeCycle {
 
 - 단순히 Test가 되는지를 확인하기 위한 파일로써 해당 클래스를 실행 했을 경우 Disabled된 test3을 제외한 나머지 test가 실행된다.
 
-![Untitled](16%20Test%20Code%20(JUnit)%208435d3f11cfa4086adf23ae1d84dc274/Untitled%202.png)
+<img src="https://user-images.githubusercontent.com/111109411/215076306-a4a0b68e-7d72-4d8b-9e0b-a62b66b38f35.png" width=80%>
+
 
 ### ProductControllerTest
 
