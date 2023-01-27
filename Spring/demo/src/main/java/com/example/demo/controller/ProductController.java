@@ -13,8 +13,11 @@ import org.springframework.web.bind.annotation.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+
 @RestController
 @RequestMapping("/devdachan/product-api")
+@EnableWebMvc
 public class ProductController {
     private ProductService productService;
     private final Logger LOGGER = LoggerFactory.getLogger(HelloController.class);
@@ -46,7 +49,7 @@ public class ProductController {
         return productService.saveProduct(productId, productName, productPrice, productStock);
     }*/
 
-    @PostMapping
+    @PostMapping(value="/product")
     public ResponseEntity<ProductDTO> createProduct(@Valid @RequestBody ProductDTO productDto) {
         String productId = productDto.getProductId();
         String productName = productDto.getProductName();

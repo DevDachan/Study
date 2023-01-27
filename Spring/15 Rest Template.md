@@ -7,7 +7,9 @@
 - 동기 방식으로 처리되며 비동기 방식으로는 AsyncRestTemplate이 있음
 - RestTemplate 클래스는 REST 서비스를 호출하도록 설계되어 HTTP 프로토콜의 메소드에 맞게 여러 메소드를 제공
 
-![Untitled](15%20Rest%20Template%20033af974c904416490205f8ef2dc4679/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/214818434-ff805491-6e8a-4465-9a69-adf37704cd2b.png" width=80%>
+
+
 
 - 가장 눈 여겨 봐야 하는 method는 exchange인데 type이 따로 정해져 있지 않고 그때그때 바꿔서 사용하는 것
 
