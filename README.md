@@ -2,6 +2,14 @@
 
 - 개인 스터디 내용을 정리한 Repository입니다.
 
+
+## Project
+
+- demo  : 1~17
+- demo2 : 15
+- demo3 : 18~
+
+
 # 목차
 
 **[JSP](https://github.com/DevDachan/Study/tree/main/JSP)**
@@ -28,7 +36,20 @@
 > [5 Hello World](https://github.com/DevDachan/Study/blob/main/Spring/5%20Hello%20World.md)   
 > [6 GET, POST API](https://github.com/DevDachan/Study/blob/main/Spring/6%20GET%2C%20POST%20API.md)   
 > [7 Swagger](https://github.com/DevDachan/Study/blob/main/Spring/7%20Swagger%20(%ED%98%91%EC%97%85%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)%20Error.md)   
-> [8 PUT, DELETE API](https://github.com/DevDachan/Study/blob/main/Spring/8%20PUT%2C%20DELETE%20API.md)   
+> [8 PUT, DELETE API](https://github.com/DevDachan/Study/blob/main/Spring/8%20PUT%2C%20DELETE%20API.md)     
+> [9 Lombok](https://github.com/DevDachan/Study/blob/main/Spring/9%20Lombok.md)   
+> [10 DB (Entity, DAO, Repository, DTO)](https://github.com/DevDachan/Study/blob/main/Spring/10%20DB%20(Entity%2C%20DAO%2C%20Repository%2C%20DTO).md)   
+> [11 ORM, JPA, Spring Data JPA](https://github.com/DevDachan/Study/blob/main/Spring/11%20ORM%2C%20JPA%2C%20Spring%20Data%20JPA.md)   
+> [12 Logback Framework](https://github.com/DevDachan/Study/blob/main/Spring/12%20Logback%20Framwork.md)   
+> [13 유효성 검사](https://github.com/DevDachan/Study/blob/main/Spring/13%20%EC%9C%A0%ED%9A%A8%EC%84%B1%20%EA%B2%80%EC%82%AC.md)   
+> [14 예외처리](https://github.com/DevDachan/Study/blob/main/Spring/14%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC.md)   
+> [15 Rest Template](https://github.com/DevDachan/Study/blob/main/Spring/15%20Rest%20Template.md)   
+> [16 Test Code(JUnit)](https://github.com/DevDachan/Study/blob/main/Spring/16%20Test%20Code%20(JUnit).md)   
+> [17 테스트 커버리지](https://github.com/DevDachan/Study/blob/main/Spring/17%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80.md)   
+> [18 구글 자바 포맷 적용](https://github.com/DevDachan/Study/blob/main/Spring/18%20%EA%B5%AC%EA%B8%80%20%EC%9E%90%EB%B0%94%20%ED%8F%AC%EB%A7%B7%20%EC%A0%81%EC%9A%A9.md)   
+
+
+
 
 
 
