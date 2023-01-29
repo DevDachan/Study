@@ -4,7 +4,9 @@
 
 [애플리케이션 - NAVER Developers](https://developers.naver.com/apps/#/register)
 
-![Untitled](20%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8E%E1%85%AE%E1%86%A8%20URL%206298767f25f3448b9f2f2305aca0839a/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/215320436-37a8ef16-8c1b-4bfe-8682-922f52ef5bdb.png" width=60%>
+
+
 
 - 개발을 하면서 내가 만드는 이 프로그램이 어떤 생명주기를 가지고 있나를 정하는 것이 중요하다.
 
@@ -16,13 +18,17 @@
 
 ### 전체 프로젝트 구조
 
-![제목 없음.png](20%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8E%E1%85%AE%E1%86%A8%20URL%206298767f25f3448b9f2f2305aca0839a/%25EC%25A0%259C%25EB%25AA%25A9_%25EC%2597%2586%25EC%259D%258C.png)
+<img src="https://user-images.githubusercontent.com/111109411/215320446-1394660c-0d73-43f7-b3dc-11e33b682924.png" width=60%>
+
+
 
 - Naver API가 존재하고 기본 Project와 연결이 된다. Client에 해당하는 User와도 HTTP 통신을 하며 DB와는 CRUD를 위한 통신을 하게 된다.
 
 ### 코드 구조
 
-![Untitled](20%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8E%E1%85%AE%E1%86%A8%20URL%206298767f25f3448b9f2f2305aca0839a/Untitled%201.png)
+<img src="https://user-images.githubusercontent.com/111109411/215320457-e667459c-77bb-4db0-8a5e-72296c171616.png" width=60%>
+
+
 
 - Controller
 - Service-Impl
@@ -32,19 +38,23 @@
 
 ### Controller 설계
 
-![Untitled](20%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8E%E1%85%AE%E1%86%A8%20URL%206298767f25f3448b9f2f2305aca0839a/Untitled%202.png)
+<img src="https://user-images.githubusercontent.com/111109411/215320462-9a8c7812-acf0-4401-91fb-43aab049a4f0.png" width=60%>
+
 
 ### Service 설계
 
-![Untitled](20%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8E%E1%85%AE%E1%86%A8%20URL%206298767f25f3448b9f2f2305aca0839a/Untitled%203.png)
+<img src="https://user-images.githubusercontent.com/111109411/215320472-f3fe0918-1599-41a3-bcce-3f252e9c7169.png" width=60%>
+
 
 ### DAO 설계
 
-![Untitled](20%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8E%E1%85%AE%E1%86%A8%20URL%206298767f25f3448b9f2f2305aca0839a/Untitled%204.png)
+
+<img src="https://user-images.githubusercontent.com/111109411/215320482-3ebb2532-3528-48e5-9b28-29a860e05e89.png" width=60%>
 
 ### Entity 설계
 
-![Untitled](20%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8E%E1%85%AE%E1%86%A8%20URL%206298767f25f3448b9f2f2305aca0839a/Untitled%205.png)
+<img src="https://user-images.githubusercontent.com/111109411/215320520-71d6b1e7-dc0d-4cbe-b9d1-1f1fc168c173.png" width=60%>
+
 
 - 생성 일을 자동으로 생성해주는 JPA
 - DB를 사용하면서 만약 잘못됐을 경우 해당 내용을 롤백할 때 어떤 시점으로 돌아갈지, 누가 잘못 했는지를 확인하게 해주기 때문에 이러한 생성일, 수정 일을 기본적으로 추가 한다.
