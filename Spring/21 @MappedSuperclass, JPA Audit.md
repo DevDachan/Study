@@ -11,13 +11,14 @@
 
 **Mapping 이전**
 
-![Untitled](21%20@MappedSuperclass,%20JPA%20Audit%204a42648815e1467f8f03493af1d1f68b/Untitled.png)
 
- 
+<img src="https://user-images.githubusercontent.com/111109411/215454469-ea76b573-dfe1-4b3c-a452-6f0a8e3be3e5.png" width=60%>
+
 
 **Mapping 이후**
 
-![Untitled](21%20@MappedSuperclass,%20JPA%20Audit%204a42648815e1467f8f03493af1d1f68b/Untitled%201.png)
+<img src="https://user-images.githubusercontent.com/111109411/215454475-ba25d8eb-66ce-4bd3-a98f-077ae1f5e9d9.png" width=60%>
+
 
 ## @Auditing
 
@@ -224,23 +225,29 @@ public class ListenerController {
 
 **saveListener**
 
-![Untitled](21%20@MappedSuperclass,%20JPA%20Audit%204a42648815e1467f8f03493af1d1f68b/Untitled%202.png)
+<img src="https://user-images.githubusercontent.com/111109411/215454593-b9521009-4bbc-44a6-a182-cf004bc2ee0b.png" width=80%>
 
-![Untitled](21%20@MappedSuperclass,%20JPA%20Audit%204a42648815e1467f8f03493af1d1f68b/Untitled%203.png)
+
+<img src="https://user-images.githubusercontent.com/111109411/215454600-671569c0-0356-43e3-806c-c7d8d8a509f7.png" width=100%>
+
 
 - Log를 확인해보면 보이는 것과 같이 쿼리문이 실행되는 상황에서 앞 뒤로 listener가 동작한 것을 볼 수 있다.
 
 **getListener**
 
-![Untitled](21%20@MappedSuperclass,%20JPA%20Audit%204a42648815e1467f8f03493af1d1f68b/Untitled%204.png)
 
-![Untitled](21%20@MappedSuperclass,%20JPA%20Audit%204a42648815e1467f8f03493af1d1f68b/Untitled%205.png)
+<img src="https://user-images.githubusercontent.com/111109411/215454696-723b104f-0538-4898-8a34-a9ee17139a93.png" width=80%>
+
+
+<img src="https://user-images.githubusercontent.com/111109411/215454787-8ccbc704-ea25-4afa-8890-c3e12f3f1cbd.png" width=100%>
 
 **updateListener**
 
-![Untitled](21%20@MappedSuperclass,%20JPA%20Audit%204a42648815e1467f8f03493af1d1f68b/Untitled%206.png)
 
-![Untitled](21%20@MappedSuperclass,%20JPA%20Audit%204a42648815e1467f8f03493af1d1f68b/Untitled%207.png)
+<img src="https://user-images.githubusercontent.com/111109411/215454835-7ee426a4-0145-410f-9e2b-bf11baa0c5c2.png" width=80%>
+
+<img src="https://user-images.githubusercontent.com/111109411/215454885-b910d58e-c20f-4c07-bf63-a424aca9de37.png" width=100%>
+
 
 - 이러한 Listener를 사용하게 되면 특정 쿼리 메소드을 실행하는 상황에서 앞 뒤로 listener를 사용해 처리가 가능하기 때문에 코드 생산성이 좋아진다.
 
