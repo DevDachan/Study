@@ -50,7 +50,7 @@ public class ShortUrlDAOImpl implements ShortUrlDAO {
 
   @Override
   public void deleteByOriginalUrl(String originalUrl) {
-    ShortUrlEntity foundShortUrlEntity = shortUrlRepository.findByUrl(originalUrl);
+    ShortUrlEntity foundShortUrlEntity = shortUrlRepository.findByOrgUrl(originalUrl);
     shortUrlRepository.delete(foundShortUrlEntity);
   }
 }

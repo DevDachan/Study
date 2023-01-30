@@ -45,7 +45,7 @@ public class ShortUrlController {
 
   @GetMapping()
   public ShortUrlResponseDTO getShortUrl( String originalUrl){
-    LOGGER.info("[generateShortUrl] perform API CLIENT_ID : {}, CLIENT_SECRET : {}, originalUrl: {}", CLIENT_ID, CLIENT_SECRET,originalUrl);
+    LOGGER.info("[getShortUrl] perform API CLIENT_ID : {}, CLIENT_SECRET : {}, originalUrl: {}", CLIENT_ID, CLIENT_SECRET,originalUrl);
 
     ShortUrlResponseDTO shortUrlResponseDTO = new ShortUrlResponseDTO("ss", "ss");
     return shortUrlService.getShortUrl(CLIENT_ID, CLIENT_SECRET, originalUrl);
@@ -55,15 +55,16 @@ public class ShortUrlController {
   public ShortUrlResponseDTO updateShortUrl(@RequestBody String originalUrl){ return null; }
 
   @DeleteMapping
-  public String deleteShortUrl(@RequestBody String url){
+  public String deleteShortUrl(String url){
     //Conrtoller는 단순히 요청된 정보를 service측에 전달만 하는 것
+    LOGGER.info("[deleteShortUrl] perform API CLIENT_ID : {}, CLIENT_SECRET : {}, originalUrl: {}", CLIENT_ID, CLIENT_SECRET,url);
 
     try{
       shortUrlService.deleteShortUrl(url);
     }catch(RuntimeException e){
       e.printStackTrace();
     }
-    return "정상 삭제 됐습니다.";
+    return "Delete!";
   }
 
 }
