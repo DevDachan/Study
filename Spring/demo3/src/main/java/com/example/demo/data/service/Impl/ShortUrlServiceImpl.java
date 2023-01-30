@@ -94,7 +94,16 @@ public class ShortUrlServiceImpl implements ShortUrlService {
     return null;
   }
 
-
+  @Override
+  public void deleteShortUrl(String url) {
+    if(url.contains("me2.do")){
+      LOGGER.info("[deleteShortUrl] Request Url is 'ShortUrl'");
+      deleteByShortUrl(url);
+    }else{
+      LOGGER.info("[deleteShortUrl] Request Url is 'OriginalUrl'");
+      deleteByOriginalUrl(url);
+    }
+  }
   @Override
   public void deleteByShortUrl(String url) {
     LOGGER.info("[deleteByShortUrl] delete record");

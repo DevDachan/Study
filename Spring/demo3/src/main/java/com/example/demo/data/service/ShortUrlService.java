@@ -11,6 +11,7 @@ public interface ShortUrlService {
 
   void deleteByShortUrl(String shortUrl);
 
+  void deleteShortUrl(String url);
   void deleteByOriginalUrl(String originalUrl);
 
 }
