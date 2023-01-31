@@ -1,10 +1,10 @@
 ## ⏰ Study 기간
 * 2023.01.18~현재
 
-demo (1~15)
-demo2 (15)
-demo3 (16~18)
-demo4 (19~)
+demo (1\~15)   
+demo2 (15)   
+demo3 (16\~18)   
+demo4 (19\~)   
 
 
 ## 📓 Study Method
