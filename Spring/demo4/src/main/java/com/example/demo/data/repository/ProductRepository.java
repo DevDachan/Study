@@ -3,6 +3,8 @@ package com.example.demo.data.repository;
 
 import com.example.demo.data.entity.ProductEntity;
 import java.util.List;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductRepository extends JpaRepository<ProductEntity, String> {
@@ -51,5 +53,22 @@ public interface ProductRepository extends JpaRepository<ProductEntity, String> 
 
   // (Is)Like, (Is)Containing, (Is)StartingWith, (Is)EndingWith
   List<ProductEntity> findByProductNameContaining(String name);
+
+  /* 정렬과 페이징 */
+
+  // Asc : 오름차순, Desc : 내림차순
+  List<ProductEntity> findByProductNameContainingOrderByProductStocksAsc(String name);
+  List<ProductEntity> findByProductNameContainingOrderByProductStocksDesc(String name);
+
+  // 여러 정렬 기준 사용
+  List<ProductEntity> findByProductNameContainingOrderByProductPriceAscProductStocksDesc(String name);
+
+  // 매개변수를 활용한 정렬
+  List<ProductEntity> findByProductNameContaining(String name, Sort sort);
+
+  // 페이징 처리하기
+  List<ProductEntity> findByProductPriceGreaterThan(Integer price, Pageable pageable);
+
+
 
 }

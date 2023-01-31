@@ -9,6 +9,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Order;
 
 
 @SpringBootTest
@@ -35,6 +38,7 @@ class ProductRepositoryTest {
     return new ProductEntity(id, "상품" + nameNumber, price, stock);
   }
 
+  // ------------------ 쿼리 메소드 -----------------------
   @Test
   void findTest() {
     List<ProductEntity> foundAll = productRepository.findAll();
@@ -50,7 +54,7 @@ class ProductRepositoryTest {
       System.out.println(product.toString());
     }
 
-    List<ProductEntity> queryEntities = productRepository.queryByProductName("상품4");
+    List<ProductEntity> queryEntities = productRepository.queryByProductName("상품5");
 
     for (ProductEntity product : queryEntities) {
       System.out.println(product.toString());
@@ -199,8 +203,8 @@ class ProductRepositoryTest {
 
     System.out.println(productRepository.findByProductNameContaining("상품1"));
   }
-/*
-  // 정렬과 페이징
+
+  // -------------------- 정렬과 페이징 ----------------------
   @Test
   void orderByTest() {
     List<ProductEntity> foundAll = productRepository.findAll();
@@ -210,12 +214,12 @@ class ProductRepositoryTest {
     }
     System.out.println("====↑↑ Test Data ↑↑====");
 
-    List<ProductEntity> foundProducts = productRepository.findByNameContainingOrderByStockAsc("상품");
+    List<ProductEntity> foundProducts = productRepository.findByProductNameContainingOrderByProductStocksAsc("상품");
     for (ProductEntity product : foundProducts) {
       System.out.println(product);
     }
 
-    foundProducts = productRepository.findByNameContainingOrderByStockDesc("상품");
+    foundProducts = productRepository.findByProductNameContainingOrderByProductStocksDesc("상품");
     for (ProductEntity product : foundProducts) {
       System.out.println(product);
     }
@@ -230,7 +234,7 @@ class ProductRepositoryTest {
     }
     System.out.println("====↑↑ Test Data ↑↑====");
 
-    List<ProductEntity> foundProducts = productRepository.findByNameContainingOrderByPriceAscStockDesc(
+    List<ProductEntity> foundProducts = productRepository.findByProductNameContainingOrderByProductPriceAscProductStocksDesc(
         "상품");
     for (ProductEntity product : foundProducts) {
       System.out.println(product);
@@ -246,14 +250,14 @@ class ProductRepositoryTest {
     }
     System.out.println("====↑↑ Test Data ↑↑====");
 
-    List<ProductEntity> foundProducts = productRepository.findByNameContaining(
+    List<ProductEntity> foundProducts = productRepository.findByProductNameContaining(
         "상품", Sort.by(Order.asc("price")));
     for (ProductEntity product : foundProducts) {
       System.out.println(product);
     }
 
-    foundProducts = productRepository.findByNameContaining("상품",
-        Sort.by(Order.asc("price"), Order.asc("stock")));
+    foundProducts = productRepository.findByProductNameContaining("상품",
+        Sort.by(Order.asc("price"), Order.asc("stocks")));
     for (ProductEntity product : foundProducts) {
       System.out.println(product);
     }
@@ -268,18 +272,19 @@ class ProductRepositoryTest {
     }
     System.out.println("====↑↑ Test Data ↑↑====");
 
-    List<ProductEntity> foundProducts = productRepository.findByPriceGreaterThan(200,
+    List<ProductEntity> foundProducts = productRepository.findByProductPriceGreaterThan(200,
         PageRequest.of(0, 2));
     for (ProductEntity product : foundProducts) {
       System.out.println(product);
     }
 
-    foundProducts = productRepository.findByPriceGreaterThan(200, PageRequest.of(4, 2));
+    foundProducts = productRepository.findByProductPriceGreaterThan(200, PageRequest.of(4, 2));
     for (ProductEntity product : foundProducts) {
       System.out.println(product);
     }
   }
-
+  /*
+  //------------------------- 쿼리 ---------------------
   @Test
   public void queryTest() {
     List<ProductEntity> foundAll = productRepository.findAll();
