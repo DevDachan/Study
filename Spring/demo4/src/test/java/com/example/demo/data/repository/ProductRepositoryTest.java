@@ -5,6 +5,7 @@ import com.example.demo.data.entity.ProductEntity;
 import com.example.demo.data.repository.ProductRepository;
 import jakarta.transaction.Transactional;
 import java.util.List;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -283,7 +284,7 @@ class ProductRepositoryTest {
       System.out.println(product);
     }
   }
-  /*
+
   //------------------------- 쿼리 ---------------------
   @Test
   public void queryTest() {
@@ -294,7 +295,7 @@ class ProductRepositoryTest {
     }
     System.out.println("====↑↑ Test Data ↑↑====");
 
-    List<ProductEntity> foundProducts = productRepository.findByPriceBasis();
+    List<ProductEntity> foundProducts = productRepository.findByProductPriceBasis();
     for (ProductEntity product : foundProducts) {
       System.out.println(product);
     }
@@ -309,7 +310,7 @@ class ProductRepositoryTest {
     }
     System.out.println("====↑↑ Test Data ↑↑====");
 
-    List<ProductEntity> foundProducts = productRepository.findByPriceBasisNativeQuery();
+    List<ProductEntity> foundProducts = productRepository.findByProductPriceBasisNativeQuery();
     for (ProductEntity product : foundProducts) {
       System.out.println(product);
     }
@@ -324,7 +325,7 @@ class ProductRepositoryTest {
     }
     System.out.println("====↑↑ Test Data ↑↑====");
 
-    List<ProductEntity> foundProducts = productRepository.findByPriceWithParameter(2000);
+    List<ProductEntity> foundProducts = productRepository.findByProductPriceWithParameter(2000);
     for (ProductEntity product : foundProducts) {
       System.out.println(product);
     }
@@ -339,7 +340,7 @@ class ProductRepositoryTest {
     }
     System.out.println("====↑↑ Test Data ↑↑====");
 
-    List<ProductEntity> foundProducts = productRepository.findByPriceWithParameterNaming(2000);
+    List<ProductEntity> foundProducts = productRepository.findByProductPriceWithParameterNaming(2000);
     for (ProductEntity product : foundProducts) {
       System.out.println(product);
     }
@@ -354,7 +355,7 @@ class ProductRepositoryTest {
     }
     System.out.println("====↑↑ Test Data ↑↑====");
 
-    List<ProductEntity> foundProducts = productRepository.findByPriceWithParameterNaming2(2000);
+    List<ProductEntity> foundProducts = productRepository.findByProductPriceWithParameterNaming2(2000);
     for (ProductEntity product : foundProducts) {
       System.out.println(product);
     }
@@ -369,8 +370,8 @@ class ProductRepositoryTest {
     }
     System.out.println("====↑↑ Test Data ↑↑====");
 
-    List<ProductEntity> foundProducts = productRepository.findByPriceWithParameterPaging(2000,
-        PageRequest.of(2, 2));
+    List<ProductEntity> foundProducts = productRepository.findByProductPriceWithParameterPaging(2000,
+        PageRequest.of(0, 2));
     for (ProductEntity product : foundProducts) {
       System.out.println(product);
     }
@@ -380,39 +381,39 @@ class ProductRepositoryTest {
   public void basicCRUDTest() {
     // given
     ProductEntity product = ProductEntity.builder()
-        .id("testProduct")
-        .name("testP")
-        .price(1000)
-        .stock(500)
+        .productId("testProduct")
+        .productName("testP")
+        .productPrice(1000)
+        .productStocks(500)
         .build();
 
     // when
     ProductEntity savedEntity = productRepository.save(product);
 
     // then
-    Assertions.assertThat(savedEntity.getId())
-        .isEqualTo(product.getId());
-    Assertions.assertThat(savedEntity.getName())
-        .isEqualTo(product.getName());
-    Assertions.assertThat(savedEntity.getPrice())
-        .isEqualTo(product.getPrice());
-    Assertions.assertThat(savedEntity.getStock())
-        .isEqualTo(product.getStock());
+    Assertions.assertThat(savedEntity.getProductId())
+        .isEqualTo(product.getProductId());
+    Assertions.assertThat(savedEntity.getProductName())
+        .isEqualTo(product.getProductName());
+    Assertions.assertThat(savedEntity.getProductPrice())
+        .isEqualTo(product.getProductPrice());
+    Assertions.assertThat(savedEntity.getProductStocks())
+        .isEqualTo(product.getProductStocks());
 
     // when
     ProductEntity selectedEntity = productRepository.findById("testProduct")
         .orElseThrow(RuntimeException::new);
 
     // then
-    Assertions.assertThat(selectedEntity.getId())
-        .isEqualTo(product.getId());
-    Assertions.assertThat(selectedEntity.getName())
-        .isEqualTo(product.getName());
-    Assertions.assertThat(selectedEntity.getPrice())
-        .isEqualTo(product.getPrice());
-    Assertions.assertThat(selectedEntity.getStock())
-        .isEqualTo(product.getStock());
-  }*/
+    Assertions.assertThat(selectedEntity.getProductId())
+        .isEqualTo(product.getProductId());
+    Assertions.assertThat(selectedEntity.getProductName())
+        .isEqualTo(product.getProductName());
+    Assertions.assertThat(selectedEntity.getProductPrice())
+        .isEqualTo(product.getProductPrice());
+    Assertions.assertThat(selectedEntity.getProductStocks())
+        .isEqualTo(product.getProductStocks());
+  }
 
 
 }
