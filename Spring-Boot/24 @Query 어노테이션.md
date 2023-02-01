@@ -182,15 +182,20 @@ List<ProductEntity> findByProductPriceWithParameterPaging(Integer price, Pageabl
 
 **Test Data**
 
-![Untitled](24%20@Query%20%E1%84%8B%E1%85%A5%E1%84%82%E1%85%A9%E1%84%90%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%204bf342dfe61e4691ae4ffe9837d1a2f3/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/215967618-b065707e-0d2e-44c4-bbb5-60da46ecf54d.png" width=100%>
+
 
 **nativeQueryTest**
 
-![Untitled](24%20@Query%20%E1%84%8B%E1%85%A5%E1%84%82%E1%85%A9%E1%84%90%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%204bf342dfe61e4691ae4ffe9837d1a2f3/Untitled%201.png)
+
+<img src="https://user-images.githubusercontent.com/111109411/215967672-7eaee50d-a746-4b8d-bbe3-d7b0d7010534.png" width=100%>
+
 
 **parameterQueryTest**
 
-![Untitled](24%20@Query%20%E1%84%8B%E1%85%A5%E1%84%82%E1%85%A9%E1%84%90%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%204bf342dfe61e4691ae4ffe9837d1a2f3/Untitled%202.png)
+
+<img src="https://user-images.githubusercontent.com/111109411/215967697-b57295e8-c834-4758-b294-47b80768c1a7.png" width=100%>
+
 
 - nativeQuery와 parameterQuery를 Hibernate가 만들 때 만들어지는 쿼리문을 보면 훨씬 간단하게 만들어 진 것을 볼 수 있다.
 - 이러한 방식이 Secure coding의 한 부분이 될 수도 있다.
