@@ -92,6 +92,12 @@
 			<artifactId>jasypt-spring-boot-starter</artifactId>
 			<version>3.0.4</version>
 		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>RELEASE</version>
+			<scope>compile</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
