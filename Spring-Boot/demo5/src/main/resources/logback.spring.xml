@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds"> <!-- logback 구현체가 설정을 확인하는 주기 -->
+    <property name="moduleId" value="demo" /> <!-- moduleId는 프로젝트가 설치된 폴더명 또는 구분 가능한 식별자 -->
+    <property name="type" value="demo_example"/> <!-- 로그 파일명을 구성하는 인자-->
+    <property name="logback" value="logback" /> <!-- log를 저장할 최종 디렉토리명-->
+
+    <!-- Appenders -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qoslogback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-5level][%thread] %logger %msg%n </pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="console" />
+
+    </root>
+
+</configuration>
+
+
