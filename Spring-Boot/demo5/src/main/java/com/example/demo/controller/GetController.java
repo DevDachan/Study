@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/davdachan")
+@RequestMapping("/devdachan")
 // 이런식으로 class밖에 RequestMapping을 추가해줄 경우 전체 경로를 추가 가능하다.
 // http://localhost:8080/api/v1/get-api
 
@@ -16,7 +16,7 @@ public class GetController {
     // http://localhost:8080/devdachan/hello
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String getHello(){
-        return "Hello World";
+        return "Hello World Demo";
     }
     // http://localhost:8080/devdachan/name
     @GetMapping(value="/name")
