@@ -120,7 +120,9 @@ const element = {
 
 실습 예제
 
-![Untitled](4%20JSX%209599b35ae49b4496b82b7e5286f82853/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/216918327-59a62f95-4b13-4a90-b9a8-ac8398c74a58.png" width=40%>
+
+
 
 - src 폴더 내부에 demo라는 폴더를 만들고 example_children.jsx와 example_parent.jsx파일을 생성한다.
 
