@@ -6,13 +6,18 @@
 - 원래 대로라면 Element는 웹 사이트에 대한 모든 정보를 담고 있는 객체인 DOM에서 사용하는 용어이다.
 - 우리가 크롬의 검사 탭을 들어갔을 때 HTML에 관한 값이 나오는 탭이 Elements임을 봐도 element들을 모아 놓은 것이다. 하지만 여기서 말하는 element는 DOM element이다.
 
-![Untitled](5%20Elements%20Redering%20ec192d6499b248f5af9bb0b8291b143f/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/217175118-005d638c-840d-4590-9f5d-d2fbe3b60e62.png" width=60%>
+
+
 
 ## DOM Elements VS React Elements
 
 - 화면에 나타나는 내용을 기술하는 자바스크립트 객체. React가 초창기에는 이러한 객체를 Descriptor라고 불렀지만 결과적으로 웹 페이지에 나타나는 형태는 DOM Elements이기 때문에 Element라고 부르기로 결정했다.
 
-![Untitled](5%20Elements%20Redering%20ec192d6499b248f5af9bb0b8291b143f/Untitled%201.png)
+<img src="https://user-images.githubusercontent.com/111109411/217175301-630b1f2e-39d6-4ea3-8971-292120482bad.png" width=60%>
+
+
+
 
 - 가장 쉽게 표현 하면 React Elements는 DOM Element를 가상으로 표현한 것이라고 생각하면 된다.
 - 그렇기 때문에 DOM Elements는 React Element에 비해 많은 정보를 담고 있기 때문에 상대적으로 크고 무겁다.
@@ -118,12 +123,16 @@
     - 그렇다면 화면 갱신이 이루어지지 않는가? → Element 생성 후에 바꿀 수 없는 것
     - ex) 붕어빵이 기계에 들어가면 구워져 나오는데 붕어빵 내부 재료는 바꿀 수 없다. 그렇기 때문에 새로운 붕어빵을 보여주기 위해서는 새로운 붕어빵을 구워야 한다.
         
-        ![Untitled](5%20Elements%20Redering%20ec192d6499b248f5af9bb0b8291b143f/Untitled%202.png)
-        
+
+ <img src="https://user-images.githubusercontent.com/111109411/217175387-23f20f55-5f32-485e-adfe-4517aa814184.png" width=60%>
+
+
+	
     - 마찬가지로 화면에 새로운 내용을 보여주기 위해서는 기존의 Element를 수정하는 것이 아니라 새로운 Element를 만들어 기존 Element를 대체 해줘야 한다.
         
-        ![Untitled](5%20Elements%20Redering%20ec192d6499b248f5af9bb0b8291b143f/Untitled%203.png)
-        
+        <img src="https://user-images.githubusercontent.com/111109411/217175484-2a85feeb-2062-488d-b03b-46cf5d5bafed.png" width=60%>
+
+	
 
 ## Element 렌더링하기
 
@@ -134,7 +143,8 @@
     <div id="root"></div>
     ```
     
-    ![Untitled](5%20Elements%20Redering%20ec192d6499b248f5af9bb0b8291b143f/Untitled%204.png)
+    <img src="https://user-images.githubusercontent.com/111109411/217175562-33c5198d-505e-4b41-bfb2-42ef7822d14f.png" width=60%>
+
     
 - Root DOM이 element를 실제 DOM에 렌더링 하기 위해서는 아래와 같은 함수를 실행해줘야 한다.
     
