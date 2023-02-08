@@ -39,7 +39,9 @@ this.setState({
 
 - 리액트 컴포넌트는 생명주기가 정해져 있고 일정 시간이 지나면 지워진다.
 
-![Untitled](7%20State%20and%20Lifecycle%20037e5262951749628ecd4a83562ecc1e/Untitled.png)
+
+<img src="https://user-images.githubusercontent.com/111109411/217176762-5b8e785b-14fc-431d-b937-3d57deb18bf9.png" width=80%>
+
 
 - 출생: constructor에서 컴포넌트가 생성이 된다.
 - 인생: new props, setState(), forceUpdate() 등의 method를 통해서 컴포넌트의 업데이트가 이뤄진다.

@@ -90,8 +90,9 @@ class Welcome extends React.Component{
     - 이런 식으로 App이라는 함수 안에서 Welcome이라는 컴포넌트를 여러개 선언 함으로써 새로운 컴포넌트를 생성 가능
 - 같은 컴포넌트이지만 각기 다른 props를 가지고 있다.
     
-    ![Untitled](6%20%E1%84%8F%E1%85%A5%E1%86%B7%E1%84%91%E1%85%A9%E1%84%82%E1%85%A5%E1%86%AB%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AA%20Props%202a3d131de8ca437b9a90d3e24a4ff7e1/Untitled.png)
-    
+
+<img src="https://user-images.githubusercontent.com/111109411/217175978-f9563dc7-96e1-4955-b0c3-69d802872d9d.png" width=60%>
+
 
 ## Component 추출
 
@@ -173,8 +174,10 @@ class Welcome extends React.Component{
     }
     ```
     
-    ![Untitled](6%20%E1%84%8F%E1%85%A5%E1%86%B7%E1%84%91%E1%85%A9%E1%84%82%E1%85%A5%E1%86%AB%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AA%20Props%202a3d131de8ca437b9a90d3e24a4ff7e1/Untitled%201.png)
-    
+<img src="https://user-images.githubusercontent.com/111109411/217176151-f654018c-ef4b-486f-8526-c85bfde3ef5c.png" width=60%>
+
+
+
 
 ## 실습 예제
 
@@ -290,4 +293,7 @@ export default CommentList;
 
 - map함수에 대해서는 이후에 자세히 배울 예정
 
-![Untitled](6%20%E1%84%8F%E1%85%A5%E1%86%B7%E1%84%91%E1%85%A9%E1%84%82%E1%85%A5%E1%86%AB%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AA%20Props%202a3d131de8ca437b9a90d3e24a4ff7e1/Untitled%202.png)
+<img src="https://user-images.githubusercontent.com/111109411/217176235-926a5e95-dcef-4e34-922c-cd546b690536.png" width=60%>
+
+
+
