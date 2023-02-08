@@ -5,11 +5,17 @@
 - 함수 컴포넌트는 state를 별도로 정의해서 사용하지 않고 갈결하기 때문에 생명주기에 맞춰 어떤 코드가 실행되도록 할 수 없었다.
 - Hooks을 사용하면 함수 컴포넌트가 클래스 컴포넌트처럼 사용할 수 있게 된다.
     
-    ![Untitled](8%20Hooks%2084b7f7e58b3847feb2dfcfc5645074ed/Untitled.png)
+  
+ <img src="https://user-images.githubusercontent.com/111109411/217471715-3426d684-a7d5-4ab1-a137-a56b0108dc13.png" width=60%>
+
+
     
 - 원하는 시점에 원하는 함수를 실행하도록 해줌
     
-    ![Untitled](8%20Hooks%2084b7f7e58b3847feb2dfcfc5645074ed/Untitled%201.png)
+
+<img src="https://user-images.githubusercontent.com/111109411/217471781-d186812d-e2ee-4717-8d2e-b31bb957c409.png" width=60%>
+
+
     
 
 ## useState() Hook
