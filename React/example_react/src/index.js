@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -34,7 +34,7 @@ setInterval(() => {
     );
 }, 1000);
 */
-
+/*    //demo3 example
 import CommentList from './demo3(comment)/CommentList'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -45,7 +45,44 @@ root.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+*/
+/*    //demo4 example
+import Accommodate from './demo4(Hook)/Accommodate';
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <Accommodate />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+*/
+
+/*  //demo5
+import ConfirmButton from './demo5(event)/ConfirmButton';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <ConfirmButton />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+*/
+
+
+import LandingPage from './demo6(inline)/LandingPage';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <LandingPage />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
 
 
