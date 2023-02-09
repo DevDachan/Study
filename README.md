@@ -1,12 +1,12 @@
-# Study
+# :dog: Study
 
 - 개인 스터디 내용을 정리한 Repository입니다.
 
 
 
-# 목차
+# :wolf: 목차
 
-## **[JSP](https://github.com/DevDachan/Study/tree/main/JSP)**
+## :tiger: **[JSP](https://github.com/DevDachan/Study/tree/main/JSP)**
 > [1 JSP 기초](https://github.com/DevDachan/Study/blob/main/JSP/1%20JSP%20%EA%B8%B0%EC%B4%88.md)   
 > [2 내장 객체](https://github.com/DevDachan/Study/blob/main/JSP/2%20%EB%82%B4%EC%9E%A5%20%EA%B0%9D%EC%B2%B4%20(web%20xml).md)   
 > [3 내장 객체의 영역](https://github.com/DevDachan/Study/blob/main/JSP/3%20%EB%82%B4%EC%9E%A5%20%EA%B0%9D%EC%B2%B4%EC%9D%98%20%EC%98%81%EC%97%AD(Scope).md)   
@@ -22,7 +22,7 @@
 > [13 Alert](https://github.com/DevDachan/Study/blob/main/JSP/13%20Alert%20(Using%20Modal).md)   
 
 
-## **[Spring-Boot](https://github.com/DevDachan/Study/tree/main/Spring-Boot)**
+## :koala: **[Spring-Boot](https://github.com/DevDachan/Study/tree/main/Spring-Boot)**
 > [1 기본 Tool 설명](https://github.com/DevDachan/Study/blob/main/Spring/1%20%EA%B8%B0%EB%B3%B8%20Tool%20%EC%84%A4%EB%AA%85.md)   
 > [2 디자인 패턴](https://github.com/DevDachan/Study/blob/main/Spring/2%20%EB%94%94%EC%9E%90%EC%9D%B8%20%ED%8C%A8%ED%84%B4.md)   
 > [3 Rest API와 pom.xml ](https://github.com/DevDachan/Study/blob/main/Spring/3%20Rest%20API%EC%99%80%20pom_xml.md)     
@@ -51,9 +51,21 @@
 > [26 프로파일](https://github.com/DevDachan/Study/blob/main/Spring-Boot/26%20%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC.md)   
 > [27 캐시적용하기](https://github.com/DevDachan/Study/blob/main/Spring-Boot/27%20%EC%BA%90%EC%8B%9C%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.md)   
 > [28 인터셉터](https://github.com/DevDachan/Study/blob/main/Spring-Boot/28%20%EC%9D%B8%ED%84%B0%EC%85%89%ED%84%B0.md)   
+> [29 개발자 툴 적용하기](https://github.com/DevDachan/Study/blob/main/Spring-Boot/29%20%EA%B0%9C%EB%B0%9C%EC%9E%90%20%ED%88%B4%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.md)
 
 
 
+## :rabbit: **[React](https://github.com/DevDachan/Study/tree/main/React)**   
+> [1. 웹 서비스 기본 용어](https://github.com/DevDachan/Study/blob/main/React/1%20%EC%9B%B9%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EA%B8%B0%EB%B3%B8%20%EC%9A%A9%EC%96%B4.md)   
+> [2. 개발 환경 설정](https://github.com/DevDachan/Study/blob/main/React/2%20%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95.md)   
+> [3. React 프로젝트 시작](https://github.com/DevDachan/Study/blob/main/React/3%20React%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%8B%9C%EC%9E%91.md)   
+> [4. JSX](https://github.com/DevDachan/Study/blob/main/React/4%20JSX.md)   
+> [5. Elements Redering](https://github.com/DevDachan/Study/blob/main/React/5%20Elements%20Redering.md)   
+> [6. 컴포넌트와 Props](https://github.com/DevDachan/Study/blob/main/React/6%20%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%99%80%20Props.md)   
+> [7. State and Lifecycle](https://github.com/DevDachan/Study/blob/main/React/7%20State%20and%20Lifecycle.md)   
+> [8. Hooks](https://github.com/DevDachan/Study/blob/main/React/8%20Hooks.md)   
+> [9. 이벤트 핸들링](https://github.com/DevDachan/Study/blob/main/React/9%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%ED%95%B8%EB%93%A4%EB%A7%81.md)   
+> [10. 조건부 렌더링](https://github.com/DevDachan/Study/blob/main/React/10%20%EC%A1%B0%EA%B1%B4%EB%B6%80%20%EB%A0%8C%EB%8D%94%EB%A7%81.md)   
 
 
 
