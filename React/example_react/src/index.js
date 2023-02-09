@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 
 /*
-//   demo example
+//demo example
 import Library from './demo/Library';
 
 
@@ -22,7 +22,7 @@ root.render(
 */
 
 /*
-//   demo2 example
+//demo2 example
 import Clock from './demo2(clock)/Clock'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -34,7 +34,8 @@ setInterval(() => {
     );
 }, 1000);
 */
-/*    //demo3 example
+/*
+//demo3 example
 import CommentList from './demo3(comment)/CommentList'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -46,7 +47,8 @@ root.render(
   document.getElementById("root")
 );
 */
-/*    //demo4 example
+/*
+//demo4 example
 import Accommodate from './demo4(Hook)/Accommodate';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -59,7 +61,8 @@ root.render(
 );
 */
 
-/*  //demo5
+/*
+//demo5
 import ConfirmButton from './demo5(event)/ConfirmButton';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -72,7 +75,8 @@ root.render(
 );
 */
 
-
+/*
+//demo6
 import LandingPage from './demo6(inline)/LandingPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -83,8 +87,32 @@ root.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+*/
 
+/*
+// demo7
+import AttendanceBook from './demo7(list_key)/AttendanceBook';
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <AttendanceBook />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+*/
+
+import SingUp from './demo8(form)/SingUp';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <SingUp />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
