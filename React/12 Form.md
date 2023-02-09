@@ -26,7 +26,8 @@
 - 사용자가 입력한 값에 접근하고 제어할 수 있도록 해주는 컴포넌트
 - 리액트의 통제를 받는 컴포넌트 (Input Form Element)
     
-    ![Untitled](12%20%E1%84%91%E1%85%A9%E1%86%B7%203d5f66b3e9b24e0d8567a515b2d6bb6d/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/217731617-98dc4168-8f77-407c-80b1-ae76c2509213.png" width=60%>
+
     
     - HTML form으로 관리할 경우 각각의 state를 자체적으로 관리하게 되지만 Controlled Component를 사용하게 되면 모든 데이터를 하나의 state에서 관리가 가능하며 setState()로만 수정이 가능해진다.
 
