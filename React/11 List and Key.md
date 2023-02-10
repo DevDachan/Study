@@ -19,7 +19,8 @@
 - React에서는 item을 구분하기 위한 고유한 문자열
 - key의 값은 같은 list에 있는 Elements 사이에서만 고유한 값이면 된다.
 
-![Untitled](11%20%E1%84%85%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AA%20%E1%84%8F%E1%85%B5%206536b09527f74df487fff26e217e197b/Untitled.png)
+
+<img src="https://user-images.githubusercontent.com/111109411/217731518-d096f324-820e-4503-8f5d-a939972e495e.png" width=60%>
 
 ## map()
 
