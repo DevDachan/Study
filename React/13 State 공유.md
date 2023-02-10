@@ -182,7 +182,8 @@ tryConvert('10.22', toFahrenheit);  // 50.396
     ```
     
 
-![Untitled](13%20State%20%E1%84%80%E1%85%A9%E1%86%BC%E1%84%8B%E1%85%B2%202247ed28a02a42389c06c9088fce50f2/Untitled.png)
+
+<img src="https://user-images.githubusercontent.com/111109411/218037165-bc545a72-6327-4b0e-bc98-87f15c299f82.png" width=60%>
 
 ## 실습 예제
 
