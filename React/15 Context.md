@@ -4,12 +4,16 @@
 
 - 기존에는 컴포넌트의 props를 통한 단방향 데이터를 전달했다. 이러한 방식은 구조가 복잡해질 경우 데이터 접근이 복잡해진다.
 
-![Untitled](15%20Context%20c49705e78bb944f1815b826332dd7890/Untitled.png)
+
+<img src="https://user-images.githubusercontent.com/111109411/218242589-b383ee8d-7da7-40ad-9390-6dc4ff133e34.png" width=60%>
+
+
 
 - 컴포넌트 트리를 통해 새로운 방식으로 데이터를 전달해서 쉽게 데이터에 접근이 가능하도록 함
     
-    ![Untitled](15%20Context%20c49705e78bb944f1815b826332dd7890/Untitled%201.png)
-    
+<img src="https://user-images.githubusercontent.com/111109411/218242591-e073c57a-415b-4441-a039-abade6ed04c8.png" width=60%>
+
+
 
 ## 언제 Context를 사용하는가?
 
