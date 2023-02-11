@@ -10,7 +10,10 @@
 - Element에 스타일이 적용되는 규칙
 - 스타일을 어떤 Element에 적용할 지를 선택하게 해준다.
 
-![Untitled](16%20Styling%20(CSS)%2074843491e1eb4be28db5d494a9b0ace9/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/218242640-2b44b0a1-f0a3-4de8-bbda-1b7360c65991.png" width=60%>
+
+
+
 
 ## Selector의 유형
 
@@ -120,7 +123,7 @@ p:last-child{
         - <script> 태그의 display 속성 기본값은 none이다.
     - **display: block;**
         - 블록 단위로 element를 배치
-        - <p>, <div>, <h1>~<h6> 태그의 diㅕsplay 속성 기본 값이 block이다.
+        - \<p\>, \<div\>, \<h1\>~\<h6\> 태그의 diㅕsplay 속성 기본 값이 block이다.
     - **display: inline;**
         - element를 라인 안에 넣는 것
         - <span> 태그의 display 속성 기본 값이 inline이다.
@@ -185,8 +188,10 @@ div{
 - 기존 CSS Layout 사용의 불편한 부분을 개선하기 위해 등장
 - display에서 flex를 사용하게 되면 element가 flex container가 된다.
     
-    ![Untitled](16%20Styling%20(CSS)%2074843491e1eb4be28db5d494a9b0ace9/Untitled%201.png)
-    
+    <img src="https://user-images.githubusercontent.com/111109411/218242646-ce136f31-7aeb-402a-bfae-21993b4330e5.png" width=60%>
+
+
+	
     ```jsx
     div{
     	display: flex;
@@ -203,10 +208,12 @@ div{
     - **row-reverse:** 아이템을 행의 역방향으로 오른쪽부터 배치
     - **column-reverse**: 아이템을 열의 역방향으로 아래쪽부터 배치
     
-    ![Untitled](16%20Styling%20(CSS)%2074843491e1eb4be28db5d494a9b0ace9/Untitled%202.png)
-    
-    ![Untitled](16%20Styling%20(CSS)%2074843491e1eb4be28db5d494a9b0ace9/Untitled%203.png)
-    
+    <img src="https://user-images.githubusercontent.com/111109411/218242653-d3e3eb66-e3c2-49f8-b134-94fef5d0d9e8.png" width=60%>
+
+
+    <img src="https://user-images.githubusercontent.com/111109411/218242657-51f289b2-d8a0-4f32-8da6-aa7c5d10115f.png" width=60%>
+
+
 
 - **align-items**
     - 어떻게 item들을 정렬 할 건인지를 결정한다. (cross axis기준)
@@ -215,9 +222,9 @@ div{
     - **center** : cross axis의 중앙으로 아이템을 정렬
     - **flex-end** : cross axis의 끝 지점으로 아이템을 정렬
     - **baseline** : 아이템을 baseline 기준으로 정렬
-    
-    ![Untitled](16%20Styling%20(CSS)%2074843491e1eb4be28db5d494a9b0ace9/Untitled%204.png)
-    
+ 
+<img src="https://user-images.githubusercontent.com/111109411/218242660-0af41ddb-d2a4-4d90-b1d6-ff742333f46c.png" width=60%>
+
 
 - **justify-content**
     - 어떻게 아이템들을 나란히 맞출 것인지를 결정
@@ -226,9 +233,10 @@ div{
     - **flex-end** : main axis의 끝 지점으로 아이템을 정렬
     - **space-between** : main axis를 기준으로 첫 아이템은 시작 지점에 맞추고 마지막 아이템은 끝 지점에 맞추며 중간에 있는 아이템들 사이의 간격이 일정하게 되도록 맞춤
     - **space-around** : main axis를 기준으로 각 아이템의 주변 간격을 동일하게 맞춤
-        
-        ![Untitled](16%20Styling%20(CSS)%2074843491e1eb4be28db5d494a9b0ace9/Untitled%205.png)
-        
+ 
+        <img src="https://user-images.githubusercontent.com/111109411/218242664-21bacf05-1d23-487a-bafa-63db26e635ff.png" width=60%>
+
+
 
 # 글꼴과 관련된 속성
 
