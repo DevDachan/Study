@@ -27,7 +27,8 @@ $ serve -s build
 
 - 위 명령어를 실행하면 serve 프로그램이 실행된다.
 
-![Untitled](19%20Build%E1%84%8B%E1%85%AA%20%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9%206d1376c0c90849638bac841e7860c8a7/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/218306231-ba3ee7ad-60b5-46a7-87e2-d059675a50aa.png" width=60%>
+
 
 ## 배포
 

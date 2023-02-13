@@ -10,7 +10,8 @@
 
 ## 전체 디자인
 
-![Untitled](17%20Mini%20Project%20(Blog)%206df42bcb8a61455bb6cdda8e9b0ca7c8/Untitled.png)
+<img src="https://user-images.githubusercontent.com/111109411/218306178-43d3505a-e487-433c-8534-96eea8b241c8.png" width=60%>
+
 
 ## 프로젝트 생성하기
 
@@ -18,7 +19,8 @@
 $ npx create-react-app mini-blog
 ```
 
-![Untitled](17%20Mini%20Project%20(Blog)%206df42bcb8a61455bb6cdda8e9b0ca7c8/Untitled%201.png)
+<img src="https://user-images.githubusercontent.com/111109411/218306186-b272abc2-6178-46e7-95a1-c594da7b1438.png" width=60%>
+
 
 ## 프로젝트 실행하기
 
@@ -26,7 +28,8 @@ $ npx create-react-app mini-blog
 npm start
 ```
 
-![Untitled](17%20Mini%20Project%20(Blog)%206df42bcb8a61455bb6cdda8e9b0ca7c8/Untitled%202.png)
+<img src="https://user-images.githubusercontent.com/111109411/218306194-a83d779f-d4cc-4199-98b0-07d2b3bd367a.png" width=60%>
+
 
 ## 필요한 패키지
 
@@ -55,7 +58,8 @@ $ npm install --save styled-components
 
 ## 전체적인 프로젝트 폴더 구조
 
-![Untitled](17%20Mini%20Project%20(Blog)%206df42bcb8a61455bb6cdda8e9b0ca7c8/Untitled%203.png)
+<img src="https://user-images.githubusercontent.com/111109411/218306201-120ca0c8-1cbb-4f78-9d48-309605881a13.png" width=60%>
+
 
 - 폴더 구조에는 정해진 양식이 없지만 협업을 위해서는 보편적으로 많이 사용하는 방식으로 구성하는 것이 좋고 재 사용이 되는 컴포넌트는 모아 놓으면 좋다.
 
