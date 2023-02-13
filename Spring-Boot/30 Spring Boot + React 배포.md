@@ -40,7 +40,9 @@ $ sudo apt install openjdk-11-jdk
     
     - 위에서 생성된 키를 ```GitHub > 계정 > 설정 > SSH and OPG keys > New SSH key``` 에 등록 시키기
 
-![Untitled](30%20Spring%20Boot%20+%20React%20%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9%20966f68cf510d4002a92902a21c9553fd/Untitled.png)
+
+<img src="https://user-images.githubusercontent.com/111109411/218372486-707167b0-ca33-4f32-b3d4-5e578e1f6a33.png" width=60%>
+
 
 - **Git Clone**
     
@@ -159,6 +161,7 @@ gradle bootRun
 </dependency>
 ```
 
-**출처**
+
+## 출처
 
 [Spring Boot - 서버 배포하기 1](https://velog.io/@yewo2nn16/SpringBoot-서버-배포)
